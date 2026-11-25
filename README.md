@@ -10,7 +10,7 @@ Libro abierto e interactivo para doctorandos y personal investigador sobre intel
 
 ## Cita
 
-Sánchez-Núñez, P. (2026). *Inteligencia emocional para la investigación*. Universidad Carlos III de Madrid. Zenodo.
+Sánchez-Núñez, P. (2026). *Inteligencia emocional para la investigación*. Universidad Carlos III de Madrid. Zenodo. <https://doi.org/10.5281/zenodo.24534435>
 
 ## Licencia
 
