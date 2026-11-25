@@ -1,0 +1,57 @@
+---
+engine: markdown
+---
+
+# Laboratorio interactivo {#sec-laboratorio}
+
+Este apéndice reúne un escenario ramificado y una actividad para practicar en tu navegador.
+
+## Escenario: el revisor 2
+
+::: {.escenario #ia-lab-revisor titulo="Una revisión muy dura"}
+Recibes las revisiones de tu primer artículo. El revisor 2 escribe: «El planteamiento es ingenuo y los autores parecen desconocer la literatura básica». Notas un nudo en el estómago y el corazón acelerado.
+
+### Lo primero {#ir-inicio}
+¿Qué haces en la próxima hora?
+
+- [Pongo nombre a lo que siento y me doy un tiempo antes de responder](#ir-nombra)
+- [Respondo al editor ahora mismo, mientras tengo claros mis argumentos](#ir-impulso)
+- [Cierro el correo y decido no volver a mirarlo hasta dentro de un mes](#ir-evita)
+
+### Nombras la emoción {#ir-nombra}
+«Siento vergüenza y rabia, y es normal: es mi primer artículo.» Al día siguiente vuelves a leer la revisión. ¿Cómo la abordas?
+
+- [Separo el tono del contenido y hago una tabla con cada comentario y mi respuesta](#ir-tabla)
+- [Busco quién puede ser el revisor para entender por qué me ataca](#ir-rumia)
+
+### Tabla de respuestas {#ir-tabla .final .bien}
+Al separar el tono del contenido descubres que, debajo de la dureza, hay tres críticas útiles sobre la revisión de la literatura. Las atiendes con educación y argumentos. Has usado la **reevaluación cognitiva**: cambiar cómo interpretas la situación para que la emoción te ayude en vez de bloquearte.
+
+### Rumiación {#ir-rumia .final .regular}
+Dar vueltas a quién es y por qué lo hace alimenta el malestar y no mejora el artículo. Vuelve al contenido: ¿qué críticas son útiles?
+
+### Respuesta impulsiva {#ir-impulso .final .mal}
+Una respuesta escrita en caliente suele sonar defensiva y puede costarte el artículo. Deja pasar al menos un día y pide a alguien de confianza que lea tu borrador.
+
+### Evitación {#ir-evita .final .mal}
+Evitar alivia a corto plazo, pero el plazo de revisión sigue corriendo y la ansiedad crece. Divide la tarea: hoy solo lees, mañana clasificas los comentarios.
+:::
+
+## Actividad: estrategias de regulación emocional
+
+::: {.clasificar #ia-lab-gross titulo="¿Qué estrategia del modelo de Gross es?" categorias="Selección de la situación|Modificación de la situación|Despliegue atencional|Cambio cognitivo|Modulación de la respuesta"}
+- Decides no leer las revisiones el viernes por la noche → Selección de la situación // Eliges a qué situación te expones y cuándo.
+- Pides a tu directora que lea las revisiones contigo → Modificación de la situación // Cambias las condiciones de la situación.
+- Durante la defensa te centras en las caras amables del tribunal → Despliegue atencional // Diriges la atención.
+- Interpretas una crítica dura como señal de que el revisor se tomó en serio tu trabajo → Cambio cognitivo // Es reevaluación: cambias el significado.
+- Respiras despacio antes de responder a una pregunta difícil → Modulación de la respuesta // Actúas sobre la respuesta fisiológica ya en marcha.
+- Divides la respuesta a los revisores en tareas pequeñas para no bloquearte → Modificación de la situación // Cambias la forma de la tarea.
+- Piensas «es una revisión de un artículo, no un juicio sobre mi valía» → Cambio cognitivo // Reencuadras la situación.
+- Sales a caminar después de una reunión tensa → Modulación de la respuesta // Reduces la activación después de la emoción.
+:::
+
+## Para ver y seguir aprendiendo
+
+Son enlaces, no vídeos incrustados: el vídeo se abre en la web de quien lo publica, así esta página no carga rastreadores de terceros. La mayoría está en inglés; activa los subtítulos si los necesitas.
+
+- **[The gift and power of emotional courage](https://www.ted.com/talks/susan_david_the_gift_and_power_of_emotional_courage)** — Susan David · TEDWomen 2017. Sobre la agilidad emocional y por qué suprimir las emociones difíciles las amplifica; con transcripción.
