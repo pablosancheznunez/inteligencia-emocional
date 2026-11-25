@@ -93,6 +93,34 @@ viewof critico = texto("Pensamiento autocrítico", {value: "Todos mis compañero
 ```
 :::
 
+## Caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Responder a un rechazo con los tres componentes de Neff
+Pensamiento tras el rechazo de un artículo: «Soy un fraude, nunca voy a publicar nada».
+
+- **Atención plena:** «Ahora me siento decepcionado y avergonzado. Es un pensamiento, no un hecho».
+- **Humanidad compartida:** «A casi todos los investigadores les rechazan artículos; mi directora me contó que su primer artículo lo rechazaron tres revistas».
+- **Amabilidad:** «He trabajado mucho en esto. Los comentarios me dicen cómo mejorarlo. Hoy descanso y mañana planifico la revisión».
+
+El objetivo no es sentirse bien al instante, sino que el rechazo no se convierta en un juicio sobre tu valía.
+:::
+
+## Ejercicios graduados
+
+**Básico.** ¿Qué componente se opone a «solo a mí me pasan estas cosas»?
+
+::: {.webex-solution boton="Ver solución"}
+La humanidad compartida (frente al aislamiento).
+:::
+
+**Avanzado.** Escribe una respuesta autocompasiva a un pensamiento autocrítico frecuente tuyo con los tres componentes.
+
+::: {.webex-solution boton="Ver solución"}
+Cada componente debe aparecer de forma reconocible y la respuesta debe ser realista, no un elogio vacío.
+:::
+
+
 ## Actividades
 
 ::: {.clasificar #ia-i5-comp titulo="¿Qué componente de la autocompasión (o su opuesto)?" categorias="Amabilidad|Juicio severo|Humanidad compartida|Aislamiento|Atención plena|Sobreidentificación"}

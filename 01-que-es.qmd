@@ -62,6 +62,35 @@ Conclusiones prudentes:
 - Muchas afirmaciones populares (que explica la mayor parte del éxito profesional, por ejemplo) **no tienen apoyo empírico**.
 - Las capacidades emocionales **se pueden mejorar** con práctica, sobre todo la comprensión y la regulación.
 
+## Caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Las cuatro ramas en una reunión difícil
+Situación: en la reunión del grupo, tu director critica con dureza un capítulo.
+
+- **Percibir:** notas tensión en tu cuerpo y que tu compañera mira al suelo; tu director parece cansado.
+- **Usar:** decides no responder en ese momento, porque con enfado te cuesta pensar con claridad.
+- **Comprender:** lo que sientes es frustración (habías trabajado mucho) y algo de vergüenza (fue en público); sabes que, si no la gestionas, puede convertirse en desmotivación.
+- **Regular:** pides una reunión al día siguiente para entender los comentarios y, mientras, sales a caminar.
+
+El análisis no elimina la emoción, pero te ayuda a elegir qué hacer con ella.
+:::
+
+## Ejercicios graduados
+
+**Básico.** ¿Qué rama se pone en juego al notar que una compañera está agobiada antes de que lo diga?
+
+::: {.webex-solution boton="Ver solución"}
+Percibir las emociones de otras personas.
+:::
+
+**Avanzado.** Analiza con las cuatro ramas una situación reciente de tu trabajo (puedes cambiar los detalles).
+
+::: {.webex-solution boton="Ver solución"}
+Describe qué percibiste, cómo influyó la emoción en tu pensamiento, qué comprendiste de ella y qué hiciste para regularla, y qué harías distinto.
+:::
+
+
 ## Actividades
 
 ::: {.clasificar #ia-i1-rama titulo="¿Qué rama del modelo de Mayer y Salovey?" categorias="Percibir|Usar|Comprender|Regular"}

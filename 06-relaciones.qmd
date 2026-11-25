@@ -103,6 +103,36 @@ Los conflictos son inevitables en equipos que discuten ideas; el problema es cua
 | **Evitar** | Asuntos triviales, o para enfriar los ánimos | Los problemas se acumulan |
 | **Ceder** | Cuando el asunto importa más a la otra parte | Resentimiento acumulado |
 
+## Caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Dar retroalimentación a un compañero que no cumple plazos
+Tu compañero de proyecto lleva tres semanas sin entregar su parte del análisis.
+
+Versión que falla: «Eres un irresponsable, siempre lo dejas todo para el final».
+
+Versión con el modelo SCI:
+
+> **Situación:** en el plan del 15 de octubre acordamos que el análisis estaría el día 1. **Comportamiento:** aún no lo tengo y no he recibido noticias. **Impacto:** no puedo empezar la redacción y nos arriesgamos a no llegar al congreso. **Petición:** ¿podemos hablar hoy de qué te ha impedido terminarlo y fijar una nueva fecha realista?
+
+Escucha activa después: quizá hay un problema (técnico o personal) que no conocías.
+:::
+
+## Ejercicios graduados
+
+**Básico.** Reescribe con el modelo SCI: «Tus presentaciones siempre son aburridas».
+
+::: {.webex-solution boton="Ver solución"}
+Ejemplo: «En la presentación de ayer (S), leíste las diapositivas durante veinte minutos (C) y noté que el público dejó de atender (I). ¿Te ayudaría ensayar juntos la próxima con menos texto en pantalla? (P)».
+:::
+
+**Avanzado.** Prepara y, si es posible, da una retroalimentación real con el modelo SCI; luego anota cómo fue y qué cambiarías.
+
+::: {.webex-solution boton="Ver solución"}
+La reflexión debe considerar la reacción de la otra persona, si la conversación fue bidireccional (escucha activa) y si se acordó algo concreto.
+:::
+
+
 ## Actividades
 
 ::: {.clasificar #ia-i6-foco titulo="¿Retroalimentación centrada en la tarea o en la persona?" categorias="En la tarea|En la persona"}

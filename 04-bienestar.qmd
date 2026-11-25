@@ -100,6 +100,38 @@ viewof a6 = rango("Valores: lo que hago tiene sentido para mí", [-2, 2], {value
 ```
 :::
 
+## Caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Del desajuste a una propuesta al programa de doctorado
+Varias doctorandas de un programa coinciden en el laboratorio del capítulo: desajuste en **comunidad** (trabajan aisladas) y **carga** (docencia añadida sin planificar).
+
+Acción individual: cada una protege dos bloques semanales de escritura y se une a un grupo de escritura.
+
+Acción organizativa (propuesta a la comisión del programa):
+
+- Grupos de escritura quincenales abiertos a todo el programa.
+- Criterios escritos sobre la carga docente de los contratos predoctorales.
+- Información visible sobre el servicio de atención psicológica.
+
+El enfoque recoge la conclusión de Levecque et al. (2017): las condiciones de trabajo importan.
+:::
+
+## Ejercicios graduados
+
+**Básico.** ¿Qué área de la vida laboral afecta la docencia añadida sin planificar?
+
+::: {.webex-solution boton="Ver solución"}
+La carga de trabajo (y también el control, si no se puede negociar).
+:::
+
+**Avanzado.** Propón una acción individual y una organizativa para el área de mayor desajuste en tu entorno (puede ser un caso ficticio).
+
+::: {.webex-solution boton="Ver solución"}
+La acción organizativa debe ser concreta, viable y dirigida a quien puede decidirla; la individual, sostenible en el tiempo.
+:::
+
+
 ## Actividades
 
 ::: {.clasificar #ia-i4-dim titulo="¿Qué dimensión del agotamiento? (Maslach y Leiter, 2016)" categorias="Agotamiento|Cinismo|Ineficacia"}

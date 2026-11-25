@@ -97,6 +97,32 @@ viewof acc = texto("…entonces haré…", {value: "leerlo por la mañana, con t
 ```
 :::
 
+## Caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Tres planes si-entonces para la defensa de la tesis
+1. **Si** la noche anterior no puedo dormir, **entonces** me levanto, leo algo ajeno a la tesis veinte minutos y vuelvo a la cama (modulación de la respuesta y despliegue de la atención).
+2. **Si** el tribunal hace una pregunta que no sé responder, **entonces** respiro, reconozco el límite y explico cómo lo abordaría (cambio cognitivo: «no saberlo todo es normal y honesto»).
+3. **Si** noto que me acelero al hablar, **entonces** hago una pausa al cambiar de diapositiva y miro a una persona concreta (modificación de la situación).
+
+Los planes se escriben antes y se repasan el día de antes, para que la situación active la respuesta.
+:::
+
+## Ejercicios graduados
+
+**Básico.** ¿Qué familia de estrategias de Gross es «ver la pregunta difícil del tribunal como una oportunidad»?
+
+::: {.webex-solution boton="Ver solución"}
+Cambio cognitivo (reevaluación).
+:::
+
+**Avanzado.** Escribe tres planes si-entonces para una situación difícil que tengas en las próximas semanas, con al menos dos familias de estrategias.
+
+::: {.webex-solution boton="Ver solución"}
+Deben ser concretos (situación precisa, acción observable) y basarse en estrategias con buen apoyo (reevaluación, aceptación, resolución de problemas) más que en la supresión.
+:::
+
+
 ## Actividades
 
 ::: {.clasificar #ia-i3-familia titulo="¿Qué familia de estrategia? (Gross, 1998)" categorias="Selección de la situación|Modificación de la situación|Despliegue de la atención|Cambio cognitivo|Modulación de la respuesta"}
