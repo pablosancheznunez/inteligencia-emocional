@@ -50,6 +50,37 @@ Evitar alivia a corto plazo, pero el plazo de revisión sigue corriendo y la ans
 - Sales a caminar después de una reunión tensa → Modulación de la respuesta // Reduces la activación después de la emoción.
 :::
 
+## Escenario: «me siento un fraude»
+
+::: {.escenario #ia-lab-impostor titulo="La comparación en el congreso"}
+Es tu primer congreso internacional. Después de escuchar a otras doctorandas presentar resultados que te parecen brillantes, piensas: «Yo no estoy a su nivel; me admitieron por error». Mañana presentas tú.
+
+### Esta noche {#imp-inicio}
+¿Qué haces?
+
+- [Pongo nombre a la sensación y repaso pruebas concretas de lo que he hecho](#imp-evidencias)
+- [Rehago la presentación entera hasta las tres de la mañana](#imp-perfeccion)
+- [Pienso en escribir al comité para retirar mi charla](#imp-retirar)
+
+### Pruebas concretas {#imp-evidencias}
+Anotas: el comité aceptó tu resumen tras una revisión, tu directora revisó la charla y tus datos responden a una pregunta que nadie había estudiado así. Aun así, la sensación no desaparece del todo. ¿Y ahora?
+
+- [Lo comento con una compañera del grupo durante la cena](#imp-compartir)
+- [Me lo guardo: no quiero que piensen que soy inseguro](#imp-callar)
+
+### Compartirlo {#imp-compartir .final .bien}
+Tu compañera te cuenta que ella sintió lo mismo en su primer congreso. La sensación se hace más pequeña al nombrarla y compartirla. Presentas con nervios, como casi todo el mundo, y las preguntas muestran interés. Has combinado tres estrategias: **etiquetar la emoción**, **contrastarla con pruebas** y **apoyarte en otras personas**. El llamado «fenómeno del impostor» es una experiencia frecuente en el mundo académico, no un diagnóstico.
+
+### Callarlo {#imp-callar .final .regular}
+Las pruebas ayudan, pero guardarlo todo aumenta el aislamiento. Muchas personas de tu entorno han sentido lo mismo; hablarlo suele reducir su peso.
+
+### Perfeccionismo {#imp-perfeccion .final .mal}
+Rehacerlo todo de madrugada alimenta la idea de que nunca es suficiente y te deja sin descanso para presentar. La charla ya estaba revisada: duerme y repásala una vez por la mañana.
+
+### Evitación {#imp-retirar .final .mal}
+Retirarte aliviaría la ansiedad esta noche, pero confirmaría la creencia de que no estás a la altura y perderías la oportunidad. Si la angustia es muy intensa o se repite, hablarlo con tu directora o con el servicio de atención psicológica de tu universidad es una buena decisión.
+:::
+
 ## Para ver y seguir aprendiendo
 
 Son enlaces, no vídeos incrustados: el vídeo se abre en la web de quien lo publica, así esta página no carga rastreadores de terceros. La mayoría está en inglés; activa los subtítulos si los necesitas.
