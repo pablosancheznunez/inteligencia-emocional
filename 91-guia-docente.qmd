@@ -1,0 +1,46 @@
+---
+engine: markdown
+---
+
+# Guía para el profesorado {#sec-guia}
+
+El libro sirve como manual de un taller de doctorado de unas 18-24 horas (seis sesiones) sobre competencias emocionales y bienestar en la investigación, o como lectura autónoma.
+
+## Cuidados al impartir este contenido
+
+Los temas de este libro pueden remover experiencias personales. Algunas recomendaciones:
+
+- **Voluntariedad**: nadie debe compartir información personal en clase. Todos los retos pueden hacerse sobre casos ficticios y solo se entrega la reflexión, nunca diarios ni cuestionarios.
+- **No diagnosticar**: los laboratorios son herramientas de reflexión. El profesorado no debe interpretar puntuaciones individuales.
+- **Recursos a mano**: presenta el apéndice [Recursos de apoyo](90-recursos.qmd) en la primera sesión y ten localizado el servicio de atención psicológica de la universidad.
+- **Si alguien expresa malestar intenso**: escucha, no minimices, deriva a los servicios profesionales y, ante un riesgo inmediato, llama al 112.
+- **Enfoque organizativo**: el malestar en el doctorado depende en buena parte de condiciones de trabajo modificables (capítulo 4). Evita transmitir que el bienestar es solo responsabilidad individual.
+
+## Propuesta de evaluación
+
+| Actividad | Peso orientativo |
+|---|---|
+| Retos evaluables (elegir 4 de 6), entregando solo la reflexión | 70 % |
+| Autoevaluaciones | 10 % |
+| Participación (sin obligación de compartir experiencias personales) | 20 % |
+
+La rúbrica común valora la comprensión de los conceptos (25 %), la aplicación (30 %), el uso de la evidencia (20 %), la reflexión (15 %) y la claridad (10 %).
+
+## Actividades interactivas y laboratorios
+
+Laboratorios: vocabulario emocional, plan si-entonces, encaje en las seis áreas de la vida laboral, reformulación autocompasiva y retroalimentación con el modelo SCI. Escenarios: un artículo rechazado y una crítica en público. En el PDF y el EPUB, las actividades aparecen en papel con su solución.
+
+## Autoevaluación en Aula Global y diapositivas
+
+Las preguntas están exportadas a **Moodle XML** en `moodle/`. Las diapositivas de cada capítulo están en [diapositivas/](diapositivas/index.html){target="_blank"}.
+
+## Mantenimiento
+
+```bash
+python3 herramientas/preparar.py
+python3 herramientas/moodle.py
+python3 herramientas/figuras.py
+python3 herramientas/pdf.py
+quarto render
+python3 herramientas/diapositivas.py
+```

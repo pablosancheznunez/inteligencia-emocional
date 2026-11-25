@@ -1,0 +1,186 @@
+---
+engine: markdown
+---
+
+# Capítulo 6. Empatía, retroalimentación y conflicto {#sec-cap6}
+
+::: {.callout-note appearance="default"}
+## Objetivos
+- Distinguir la empatía cognitiva de la afectiva y practicar la escucha activa.
+- Dar retroalimentación centrada en la tarea y recibirla sin ponerse a la defensiva.
+- Elegir el estilo de afrontamiento de conflictos adecuado a cada situación.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+## Glosario del capítulo
+[Empatía cognitiva](92-glosario.qmd#gl-cognitiva) · [Empatía afectiva](92-glosario.qmd#gl-afectiva) · [Escucha activa](92-glosario.qmd#gl-escucha) · [Retroalimentación](92-glosario.qmd#gl-retro) · [Modelo SCI](92-glosario.qmd#gl-sci) · [Estilos de conflicto](92-glosario.qmd#gl-conflicto)
+:::
+
+::: {.callout-tip appearance="simple" icon="false"}
+## Descargas
+[Plantilla de entrega del reto (.qmd)](plantillas/entrega_reto.qmd){.btn .btn-outline-primary .btn-sm download="entrega_reto.qmd"}
+[Tema de estilo (.scss)](plantillas/informe.scss){.btn .btn-outline-primary .btn-sm download="informe.scss"}
+:::
+
+## Lectura obligatoria
+
+::: {.lectura}
+Kluger, A. N.; DeNisi, A. (1996). [The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory](https://doi.org/10.1037/0033-2909.119.2.254). *Psychological Bulletin*, 119(2), 254-284.
+:::
+
+## 1. Empatía y escucha
+
+La **empatía** tiene dos caras: la **cognitiva** (comprender lo que otra persona piensa y siente) y la **afectiva** (resonar con su emoción). En el trabajo científico, la cognitiva es la más útil para colaborar, supervisar o negociar; la afectiva, sin regulación, puede llevar al desgaste cuando acompañamos a personas que lo pasan mal.
+
+La **escucha activa** convierte la empatía en conducta:
+
+- Atender sin preparar la respuesta mientras el otro habla.
+- **Parafrasear**: «Si te entiendo bien, lo que te preocupa es…».
+- **Validar** la emoción, aunque no se comparta la interpretación: «Entiendo que te frustre».
+- Preguntar antes de aconsejar: «¿Quieres ideas o prefieres que te escuche?».
+
+## 2. La retroalimentación: no siempre ayuda
+
+Kluger y DeNisi (1996) reunieron cientos de estudios sobre intervenciones de retroalimentación. En promedio mejoraban el rendimiento, pero en **más de un tercio de los casos lo empeoraban**. Su explicación: la retroalimentación funciona cuando dirige la atención a la **tarea** (qué hacer y cómo mejorarla) y falla cuando la dirige hacia **la persona** («eres descuidado»), porque activa la autoprotección en lugar del aprendizaje.
+
+Un formato práctico es el **modelo SCI** (situación, comportamiento, impacto), seguido de una petición:
+
+- **Situación**: cuándo y dónde. «En la reunión del martes…»
+- **Comportamiento**: lo observable, sin interpretaciones. «…presentaste los datos sin el análisis de sensibilidad…»
+- **Impacto**: la consecuencia. «…y el grupo no pudo valorar si el resultado era robusto.»
+- **Petición**: «¿Podrías incluirlo en la próxima versión?»
+
+Para **recibir** retroalimentación: escucha entera, pregunta para entender, agradece, separa lo útil de lo injusto y date tiempo antes de responder si la emoción es intensa (capítulo 3).
+
+## Laboratorio: construye una retroalimentación {#lab-i6-sci}
+
+::: {.laboratorio}
+::: {.laboratorio-etiqueta}
+Laboratorio · se ejecuta en tu navegador; tu texto no sale de él
+:::
+
+```{ojs}
+//| echo: false
+texto = window.Lab.texto
+viewof sci = {
+  const c = html`<div></div>`, campos = [["s", "Situación", "En el borrador del capítulo 2"], ["c", "Comportamiento", "eres muy desordenado y siempre dejas las referencias sin revisar"], ["i", "Impacto", "he tardado dos horas en comprobar las citas"], ["p", "Petición", "¿puedes usar el gestor de referencias en el capítulo 3?"]];
+  const ins = campos.map(([k, et, v]) => { const t = texto(et, {value: v}); t.addEventListener("input", e => e.stopPropagation()); c.append(t); return [k, t]; });
+  const b = html`<button type="button" class="btn btn-primary btn-sm mt-1">Revisar</button>`; c.append(b);
+  const leer = () => Object.fromEntries(ins.map(([k, t]) => [k, t.value.trim()]));
+  c.value = leer(); b.onclick = () => { c.value = leer(); c.dispatchEvent(new Event("input", {bubbles: true})); };
+  return c;
+}
+```
+
+```{ojs}
+//| echo: false
+{
+  const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const todo = `${sci.s} ${sci.c} ${sci.i}`.toLowerCase();
+  const avisos = [];
+  if (/\b(eres|eres un|eres una|tu actitud|tu forma de ser|tu personalidad)\b/.test(todo)) avisos.push("Hablas de la persona («eres…», «tu actitud»): descríbelo como una conducta observable (Kluger y DeNisi, 1996).");
+  if (/\b(siempre|nunca|todo el rato|constantemente)\b/.test(todo)) avisos.push("Generalizas («siempre», «nunca»): céntrate en una situación concreta.");
+  if (/\b(desordenad|vag[oa]|descuidad|irresponsable|perezos|incompetente)/.test(todo)) avisos.push("Usas un adjetivo valorativo: cámbialo por lo que hizo o dejó de hacer.");
+  if (!sci.i) avisos.push("Falta el impacto: explica la consecuencia.");
+  if (!sci.p) avisos.push("Falta la petición: di qué esperas a partir de ahora.");
+  const d = html`<div role="status"></div>`;
+  d.innerHTML = `<blockquote>${esc(sci.s)}, ${esc(sci.c)}, y ${esc(sci.i)}. ${esc(sci.p)}</blockquote>
+   ${avisos.length ? `<ul>${avisos.map(a => `<li class="lab-medio" style="font-weight:600">${a}</li>`).join("")}</ul>` : '<p class="lab-bien" style="font-weight:600">Centrada en la tarea, concreta y con una petición clara.</p>'}`;
+  return d;
+}
+```
+:::
+
+## 3. Conflictos
+
+Los conflictos son inevitables en equipos que discuten ideas; el problema es cuando se vuelven personales o se enquistan. El modelo de **estilos de conflicto** de Thomas y Kilmann combina dos dimensiones, la atención a los propios intereses y a los de la otra parte, y describe cinco estilos:
+
+| Estilo | Cuándo puede ser adecuado | Riesgo si es el único |
+|---|---|---|
+| **Competir** | Urgencias, cuestiones éticas no negociables | Daña relaciones |
+| **Colaborar** | Asuntos importantes para ambos, con tiempo | Lento |
+| **Transigir** | Acuerdos rápidos de reparto | Nadie queda satisfecho del todo |
+| **Evitar** | Asuntos triviales, o para enfriar los ánimos | Los problemas se acumulan |
+| **Ceder** | Cuando el asunto importa más a la otra parte | Resentimiento acumulado |
+
+## Actividades
+
+::: {.clasificar #ia-i6-foco titulo="¿Retroalimentación centrada en la tarea o en la persona?" categorias="En la tarea|En la persona"}
+- «El apartado de métodos no explica cómo se eligió la muestra» → En la tarea
+- «Eres muy poco riguroso» → En la persona
+- «En la figura 3 faltan las unidades del eje» → En la tarea
+- «Siempre lo haces todo a última hora» → En la persona
+- «El análisis de la tabla 2 no incluye los intervalos de confianza» → En la tarea
+:::
+
+::: {.clasificar #ia-i6-estilo titulo="¿Qué estilo de conflicto?" categorias="Competir|Colaborar|Transigir|Evitar|Ceder"}
+- Negarte a incluir a un autor que no ha contribuido, aunque insista → Competir
+- Reunirte con la coautora para buscar un diseño que responda a las dos preguntas → Colaborar
+- Repartir a medias las horas de uso del equipo compartido → Transigir
+- No discutir sobre el color de las figuras → Evitar
+- Aceptar el formato de tabla que prefiere tu colega porque a ti te da igual → Ceder
+:::
+
+::: {.escenario #ia-i6-critica titulo="Una crítica delante del grupo"}
+En el seminario del grupo, tu directora dice delante de todos: «Este análisis está mal planteado desde el principio».
+
+### El comentario {#i6e-inicio}
+Notas el calor en la cara. ¿Qué haces?
+
+- [Defenderte en el momento: «No es verdad, lo he hecho como me dijiste»](#i6e-defensa)
+- [Respirar y preguntar: «¿Qué parte del planteamiento ves más problemática?»](#i6e-preguntar)
+
+### A la defensiva {#i6e-defensa .final .mal}
+La conversación se convierte en una disputa pública. Nadie aprende nada y la relación se resiente.
+
+### Preguntar para entender {#i6e-preguntar}
+Te explica que el modelo no controla una variable importante. Tiene razón en eso, pero la forma te ha dolido. ¿Qué haces después?
+
+- [No decir nada y seguir molesta durante semanas](#i6e-callar)
+- [Agradecer el contenido y, en privado, decirle con el modelo SCI cómo te afectó la forma](#i6e-sci)
+
+### Evitar {#i6e-callar .final .regular}
+Mejoras el análisis, pero el malestar se acumula. Evitar funciona con lo trivial, no con lo que importa.
+
+### Retroalimentación hacia arriba {#i6e-sci .final .bien}
+«En el seminario del martes, la crítica delante de todo el grupo me hizo sentir expuesta y me costó pensar con claridad. ¿Podríamos comentar estos problemas antes en privado?» Separas el contenido (útil) de la forma (mejorable) y lo comunicas centrado en la conducta.
+:::
+
+## Reto evaluable {#reto-i6}
+
+::: {.callout-important appearance="simple" icon="false"}
+## Reto del capítulo 6 · Practicar la retroalimentación
+1. Prepara con el laboratorio una retroalimentación **SCI** real para un compañero o compañera (o ficticia) y, si es posible, dásela. Reflexiona sobre cómo fue.
+2. Pide retroalimentación sobre un trabajo tuyo y practica la escucha activa al recibirla.
+3. Analiza un conflicto pasado (sin identificar a nadie): ¿qué estilo usaste?, ¿cuál habría sido más adecuado?
+
+**Entrega:** con la [plantilla de entrega](plantillas/entrega_reto.qmd). Este reto **no tiene solución en el libro**.
+:::
+
+## Autoevaluación
+
+Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
+
+::: {.webex-check .webex-box}
+1. Comprender lo que otra persona piensa y siente es la empatía {{< fitb "cognitiva" ignorecase=true >}}
+2. Según Kluger y DeNisi (1996), la retroalimentación siempre mejora el rendimiento. {{< torf false >}}
+3. La retroalimentación tiende a fallar cuando dirige la atención hacia {{< mcq "la tarea" "*la persona" "el objetivo" >}}
+4. En el modelo SCI, la C corresponde al {{< fitb "comportamiento" ignorecase=true >}}
+5. Parafrasear lo que dice la otra persona forma parte de la escucha {{< fitb "activa" ignorecase=true >}}
+6. Evitar es siempre el peor estilo de conflicto. {{< torf false >}}
+7. Buscar con la otra parte una solución que satisfaga a ambas es {{< mcq "transigir" "*colaborar" "ceder" >}}
+8. ¿Qué conviene hacer al recibir una crítica dura en público?
+
+{{< longmcq "Responder al momento con todos los argumentos" "*Regular la emoción, preguntar para entender y tratar la forma en privado" "Abandonar la reunión" >}}
+:::
+
+::: {.webex-solution boton="Ver explicaciones"}
+- La afectiva es resonar con la emoción.
+- En más de un tercio de los casos la empeoró.
+- Activa la autoprotección.
+- Lo observable.
+- *Active listening*.
+- Útil para lo trivial o para enfriar.
+- Ambas partes ganan.
+- Contenido en público, forma en privado.
+:::

@@ -1,0 +1,172 @@
+---
+engine: markdown
+---
+
+# Capítulo 3. Regular las emociones {#sec-cap3}
+
+::: {.callout-note appearance="default"}
+## Objetivos
+- Conocer el modelo de proceso de la regulación emocional y sus cinco familias de estrategias.
+- Distinguir estrategias con efectos más favorables (reevaluación) y menos (supresión).
+- Preparar planes «si-entonces» para situaciones difíciles previsibles.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+## Glosario del capítulo
+[Regulación emocional](92-glosario.qmd#gl-regulacion) · [Modelo de proceso](92-glosario.qmd#gl-proceso) · [Reevaluación cognitiva](92-glosario.qmd#gl-reevaluacion) · [Supresión expresiva](92-glosario.qmd#gl-supresion) · [Rumiación](92-glosario.qmd#gl-rumiacion) · [Intención de implementación](92-glosario.qmd#gl-implementacion)
+:::
+
+::: {.callout-tip appearance="simple" icon="false"}
+## Descargas
+[Plantilla de entrega del reto (.qmd)](plantillas/entrega_reto.qmd){.btn .btn-outline-primary .btn-sm download="entrega_reto.qmd"}
+[Tema de estilo (.scss)](plantillas/informe.scss){.btn .btn-outline-primary .btn-sm download="informe.scss"}
+:::
+
+## Lectura obligatoria
+
+::: {.lectura}
+Gross, J. J. (1998). [The emerging field of emotion regulation: An integrative review](https://doi.org/10.1037/1089-2680.2.3.271). *Review of General Psychology*, 2(3), 271-299.
+:::
+
+### Lectura complementaria {.unnumbered}
+
+- Gollwitzer, P. M. (1999). [Implementation intentions: Strong effects of simple plans](https://doi.org/10.1037/0003-066X.54.7.493). *American Psychologist*, 54(7), 493-503.
+
+## 1. El modelo de proceso
+
+La **regulación emocional** es el conjunto de procesos con los que influimos en qué emociones tenemos, cuándo y cómo las vivimos y expresamos. Gross (1998) la ordena según el momento en que se interviene en la generación de una emoción, lo que da cinco familias de estrategias:
+
+| Momento | Familia | Ejemplo |
+|---|---|---|
+| Antes de la situación | **Selección de la situación** | No leer las evaluaciones de la revista a las once de la noche |
+| | **Modificación de la situación** | Pedir que la reunión difícil tenga un orden del día |
+| Durante la situación | **Despliegue de la atención** | Centrarse en los comentarios útiles de la revisión, no en el tono |
+| | **Cambio cognitivo** (reevaluación) | «El rechazo es sobre este manuscrito, no sobre mi valía; los informes me dicen cómo mejorarlo» |
+| Después de que surge la emoción | **Modulación de la respuesta** | Respirar despacio, hacer ejercicio; o suprimir la expresión |
+
+![El modelo de proceso de Gross (1998): cinco momentos en los que se puede regular una emoción.](figuras/i3_proceso.svg){#fig-i3-proceso fig-alt="Secuencia de izquierda a derecha: situación, atención, valoración y respuesta. Debajo, cinco flechas señalan dónde actúa cada familia: selección y modificación de la situación, despliegue de la atención, cambio cognitivo y modulación de la respuesta."}
+
+## 2. No todas las estrategias son iguales
+
+Gross contrasta dos estrategias muy estudiadas:
+
+- La **reevaluación cognitiva** (cambiar la interpretación de la situación) actúa pronto y tiende a reducir la experiencia emocional desagradable sin grandes costes.
+- La **supresión expresiva** (ocultar lo que se siente) actúa tarde: reduce la expresión, pero no tanto la experiencia, y tiene costes fisiológicos, de memoria y sociales.
+
+Otras estrategias habituales: la **rumiación** (dar vueltas una y otra vez a lo que salió mal) suele prolongar el malestar; la **aceptación** (permitir la emoción sin luchar contra ella) y la **resolución de problemas** suelen ayudar. Ninguna estrategia es buena en todas las situaciones: la **flexibilidad** para elegir según el contexto es lo que más se asocia con el bienestar.
+
+## 3. Planes «si-entonces»
+
+Gollwitzer (1999) mostró que las **intenciones de implementación**, planes con la forma «*si* ocurre la situación X, *entonces* haré Y», aumentan mucho la probabilidad de actuar como queremos, porque la situación dispara la conducta casi automáticamente. Son especialmente útiles para situaciones emocionales previsibles: la llegada de una revisión, una reunión tensa, el bloqueo ante la página en blanco.
+
+## Laboratorio: tu plan si-entonces {#lab-i3-plan}
+
+::: {.laboratorio}
+::: {.laboratorio-etiqueta}
+Laboratorio · se ejecuta en tu navegador; tu texto no sale de él
+:::
+
+```{ojs}
+//| echo: false
+texto = window.Lab.texto
+seleccion = window.Lab.seleccion
+viewof sit = texto("Si… (situación previsible)", {value: "recibo un correo con la decisión de la revista"})
+viewof emo = texto("…y probablemente sienta…", {value: "ansiedad y miedo al rechazo"})
+viewof estr = seleccion("Familia de estrategia", ["Selección de la situación", "Modificación de la situación", "Despliegue de la atención", "Cambio cognitivo (reevaluación)", "Modulación de la respuesta"], {value: "Selección de la situación"})
+viewof acc = texto("…entonces haré…", {value: "leerlo por la mañana, con tiempo, y no responder hasta el día siguiente"})
+```
+
+```{ojs}
+//| echo: false
+{
+  const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const consejo = {
+    "Selección de la situación": "Útil cuando puedes elegir el momento o el contexto. Cuidado con convertirla en evitación sistemática.",
+    "Modificación de la situación": "Cambia algo de la situación: pide un orden del día, una pausa, un acompañante.",
+    "Despliegue de la atención": "Dirige la atención a lo útil o a lo que depende de ti. Distraerse un rato ayuda en emociones intensas.",
+    "Cambio cognitivo (reevaluación)": "Prepara la frase alternativa por adelantado: con la emoción alta cuesta inventarla.",
+    "Modulación de la respuesta": "Respiración lenta, movimiento, una pausa antes de responder. Evita suprimir sin más."
+  }[estr];
+  const vaga = (acc || "").trim().split(/\s+/).length < 4;
+  const d = html`<div role="status"></div>`;
+  d.innerHTML = `<blockquote style="font-size:1.1rem"><strong>Si</strong> ${esc(sit)} y siento ${esc(emo)}, <strong>entonces</strong> ${esc(acc)}.</blockquote>
+   <p><strong>${estr}:</strong> ${consejo}</p>
+   ${vaga ? '<p class="lab-medio" style="font-weight:600">La acción es muy breve o vaga: concreta qué harás, cuándo y dónde.</p>' : '<p class="lab-bien" style="font-weight:600">Plan concreto. Escríbelo donde lo veas en el momento en que lo necesitarás.</p>'}`;
+  return d;
+}
+```
+:::
+
+## Actividades
+
+::: {.clasificar #ia-i3-familia titulo="¿Qué familia de estrategia? (Gross, 1998)" categorias="Selección de la situación|Modificación de la situación|Despliegue de la atención|Cambio cognitivo|Modulación de la respuesta"}
+- No consultar el correo durante el fin de semana antes de la defensa → Selección de la situación
+- Pedir que la reunión con el director sea por la mañana y con un orden del día → Modificación de la situación
+- Durante la presentación, mirar a las personas que asienten → Despliegue de la atención
+- Ver la pregunta difícil del tribunal como una oportunidad para lucirse → Cambio cognitivo
+- Salir a caminar veinte minutos después de leer la revisión → Modulación de la respuesta
+:::
+
+::: {.escenario #ia-i3-rechazo titulo="El artículo rechazado"}
+Son las once de la noche. Recibes el rechazo del artículo en el que llevas dos años, con un revisor muy duro.
+
+### El correo {#i3e-inicio}
+¿Qué haces?
+
+- [Contestar ahora mismo al editor explicando que el revisor no ha entendido nada](#i3e-responder)
+- [Cerrar el correo, reconocer que estás muy decepcionado y dejarlo para mañana](#i3e-pausa)
+
+### Respuesta impulsiva {#i3e-responder .final .mal}
+Actúas con la emoción en su punto álgido. El correo dañará tu relación con la revista y no cambiará la decisión.
+
+### Pausa {#i3e-pausa}
+Al día siguiente relees los informes. ¿Cómo los interpretas?
+
+- [«Si me rechazan, es que no valgo para investigar»](#i3e-rumia)
+- [«Dos comentarios son injustos, pero tres señalan problemas reales; corregirlos hará el artículo mejor para la siguiente revista»](#i3e-reevalua)
+
+### Rumiación {#i3e-rumia .final .regular}
+La interpretación generaliza un hecho concreto a tu identidad. Prolonga el malestar y no ayuda a mejorar el artículo.
+
+### Reevaluación {#i3e-reevalua .final .bien}
+Separas el resultado de tu valía, reconoces lo injusto y lo útil y conviertes la emoción en un plan. Es la estrategia con efectos más favorables según Gross (1998).
+:::
+
+## Reto evaluable {#reto-i3}
+
+::: {.callout-important appearance="simple" icon="false"}
+## Reto del capítulo 3 · Tres planes para tres situaciones
+1. Identifica tres situaciones emocionalmente difíciles y previsibles de tu trabajo en los próximos meses.
+2. Para cada una, escribe un plan **si-entonces** con el laboratorio, usando al menos dos familias de estrategias distintas.
+3. Aplica al menos uno y escribe una reflexión: ¿qué funcionó?, ¿qué cambiarías?
+
+**Entrega:** con la [plantilla de entrega](plantillas/entrega_reto.qmd). Este reto **no tiene solución en el libro**.
+:::
+
+## Autoevaluación
+
+Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
+
+::: {.webex-check .webex-box}
+1. El modelo de proceso de Gross (1998) tiene {{< mcq "tres" "*cinco" "siete" >}} familias de estrategias
+2. Cambiar la interpretación de una situación es la reevaluación {{< fitb "cognitiva" ignorecase=true >}}
+3. La supresión expresiva elimina la experiencia emocional sin costes. {{< torf false >}}
+4. Dar vueltas una y otra vez a lo que salió mal es la {{< fitb "rumiación" "rumiacion" ignorecase=true >}}
+5. Elegir no leer una evaluación de madrugada es {{< mcq "*selección de la situación" "supresión" "reevaluación" >}}
+6. Hay una estrategia de regulación que es la mejor en todas las situaciones. {{< torf false >}}
+7. Un plan con la forma «si X, entonces Y» es una intención de {{< fitb "implementación" "implementacion" ignorecase=true >}}
+8. ¿Por qué conviene preparar la reevaluación por adelantado?
+
+{{< longmcq "Porque así no se siente nada" "*Porque con la emoción muy intensa cuesta generar interpretaciones alternativas" "Porque la supresión funciona mejor" >}}
+:::
+
+::: {.webex-solution boton="Ver explicaciones"}
+- Situación (2), atención, cambio cognitivo, respuesta.
+- *Cognitive reappraisal*.
+- Reduce sobre todo la expresión, con costes.
+- Prolonga el malestar.
+- Actúa antes de la situación.
+- La flexibilidad importa.
+- Gollwitzer (1999).
+- Por eso los planes si-entonces ayudan.
+:::

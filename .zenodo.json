@@ -1,0 +1,33 @@
+{
+  "title": "Inteligencia emocional para la investigación",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "description": "<p>Libro abierto e interactivo para doctorandos y personal investigador sobre inteligencia emocional con base empírica: qué es (y qué no es) la inteligencia emocional, reconocer y comprender las emociones, regularlas, el estrés y la salud mental en el doctorado, la autocompasión y el síndrome del impostor, y la empatía, la retroalimentación y el conflicto. Incluye laboratorios interactivos, escenarios, autoevaluación, retos y recursos de apoyo.</p>",
+  "creators": [
+    {
+      "name": "Sánchez-Núñez, Pablo",
+      "affiliation": "Universidad Carlos III de Madrid",
+      "orcid": "0000-0001-7845-9506"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "language": "spa",
+  "access_right": "open",
+  "keywords": [
+    "inteligencia emocional",
+    "regulación emocional",
+    "bienestar",
+    "salud mental",
+    "doctorado",
+    "autocompasión",
+    "síndrome del impostor",
+    "retroalimentación"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://pablosancheznunez.com/inteligencia-emocional/",
+      "relation": "isAlternateIdentifier",
+      "scheme": "url"
+    }
+  ]
+}

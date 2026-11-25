@@ -1,0 +1,121 @@
+---
+engine: markdown
+---
+
+# Glosario {#sec-glosario}
+
+Términos del libro ordenados por capítulo.
+
+## Qué es la inteligencia emocional
+
+### Inteligencia emocional {#gl-ie}
+Capacidad de razonar con precisión sobre las emociones y de usarlas para mejorar el pensamiento. → [Capítulo 1](01-que-es.qmd)
+
+### Modelo de capacidad {#gl-capacidad}
+Enfoque que entiende la inteligencia emocional como capacidades mentales medibles con tareas. → [Capítulo 1](01-que-es.qmd)
+
+### Modelos mixtos {#gl-mixtos}
+Enfoques que combinan capacidades emocionales con rasgos de personalidad y competencias. → [Capítulo 1](01-que-es.qmd)
+
+### MSCEIT {#gl-msceit}
+Prueba de capacidad de Mayer, Salovey y Caruso para medir la inteligencia emocional. → [Capítulo 1](01-que-es.qmd)
+
+### Validez incremental {#gl-incremental}
+Lo que un predictor añade más allá de otros ya conocidos. → [Capítulo 1](01-que-es.qmd)
+
+### Modelo en cascada {#gl-cascada}
+Propuesta de que percibir favorece comprender, comprender favorece regular y regular se asocia con el rendimiento. → [Capítulo 1](01-que-es.qmd)
+
+## Reconocer y comprender las emociones
+
+### Emoción {#gl-emocion}
+Respuesta breve a algo que importa, con valoración, cambios fisiológicos, tendencia a actuar y experiencia subjetiva. → [Capítulo 2](02-reconocer.qmd)
+
+### Estado de ánimo {#gl-animo}
+Estado afectivo difuso y duradero, sin un desencadenante claro. → [Capítulo 2](02-reconocer.qmd)
+
+### Valencia y activación {#gl-valencia}
+Dimensiones básicas del afecto: agradable-desagradable y calma-agitación. → [Capítulo 2](02-reconocer.qmd)
+
+### Granularidad emocional {#gl-granularidad}
+Capacidad de distinguir con precisión entre emociones parecidas. → [Capítulo 2](02-reconocer.qmd)
+
+### Etiquetado afectivo {#gl-etiquetado}
+Poner nombre a lo que se siente, lo que ya tiene un efecto regulador. → [Capítulo 2](02-reconocer.qmd)
+
+## Regular las emociones
+
+### Regulación emocional {#gl-regulacion}
+Procesos con los que influimos en qué emociones tenemos y cómo las vivimos y expresamos. → [Capítulo 3](03-regular.qmd)
+
+### Modelo de proceso {#gl-proceso}
+Modelo de Gross con cinco familias de estrategias según el momento en que se interviene. → [Capítulo 3](03-regular.qmd)
+
+### Reevaluación cognitiva {#gl-reevaluacion}
+Cambiar la interpretación de una situación para modificar su efecto emocional. → [Capítulo 3](03-regular.qmd)
+
+### Supresión expresiva {#gl-supresion}
+Ocultar la expresión de una emoción que se está sintiendo. → [Capítulo 3](03-regular.qmd)
+
+### Rumiación {#gl-rumiacion}
+Dar vueltas de forma repetitiva a un problema o a un malestar. → [Capítulo 3](03-regular.qmd)
+
+### Intención de implementación {#gl-implementacion}
+Plan con la forma «si ocurre X, entonces haré Y». → [Capítulo 3](03-regular.qmd)
+
+## Estrés, bienestar y salud mental
+
+### Estrés {#gl-estres}
+Respuesta ante demandas que se perciben como superiores a los recursos disponibles. → [Capítulo 4](04-bienestar.qmd)
+
+### Agotamiento profesional {#gl-burnout}
+Respuesta prolongada a estresores crónicos del trabajo: agotamiento, cinismo e ineficacia (burnout). → [Capítulo 4](04-bienestar.qmd)
+
+### Demandas y control {#gl-demandas}
+Exigencias del trabajo y margen de decisión sobre él; su desequilibrio se asocia con el malestar. → [Capítulo 4](04-bienestar.qmd)
+
+### Áreas de la vida laboral {#gl-areas}
+Carga, control, recompensa, comunidad, equidad y valores (Maslach y Leiter). → [Capítulo 4](04-bienestar.qmd)
+
+### Recuperación {#gl-recuperacion}
+Procesos de descanso y desconexión que reponen los recursos tras el esfuerzo. → [Capítulo 4](04-bienestar.qmd)
+
+## Autocompasión y síndrome del impostor
+
+### Autocompasión {#gl-autocompasion}
+Tratarse con amabilidad ante el sufrimiento o el fracaso (Neff). → [Capítulo 5](05-autocompasion.qmd)
+
+### Humanidad compartida {#gl-humanidad}
+Reconocer que el error y el sufrimiento forman parte de la experiencia humana común. → [Capítulo 5](05-autocompasion.qmd)
+
+### Atención plena {#gl-atencionplena}
+Observar los propios pensamientos y emociones sin sobreidentificarse con ellos. → [Capítulo 5](05-autocompasion.qmd)
+
+### Autocrítica {#gl-autocritica}
+Juicio severo sobre uno mismo ante el error. → [Capítulo 5](05-autocompasion.qmd)
+
+### Síndrome del impostor {#gl-impostor}
+Sensación de que los propios logros no son merecidos y de que se descubrirá la falta de competencia. → [Capítulo 5](05-autocompasion.qmd)
+
+### Perfeccionismo {#gl-perfeccionismo}
+Tendencia a fijar estándares excesivos y a evaluarse con dureza. → [Capítulo 5](05-autocompasion.qmd)
+
+## Empatía, retroalimentación y conflicto
+
+### Empatía cognitiva {#gl-cognitiva}
+Comprender lo que otra persona piensa y siente. → [Capítulo 6](06-relaciones.qmd)
+
+### Empatía afectiva {#gl-afectiva}
+Resonar con la emoción de otra persona. → [Capítulo 6](06-relaciones.qmd)
+
+### Escucha activa {#gl-escucha}
+Atender, parafrasear y validar antes de responder o aconsejar. → [Capítulo 6](06-relaciones.qmd)
+
+### Retroalimentación {#gl-retro}
+Información sobre el desempeño para mejorarlo; funciona mejor si se centra en la tarea. → [Capítulo 6](06-relaciones.qmd)
+
+### Modelo SCI {#gl-sci}
+Formato de retroalimentación: situación, comportamiento e impacto, seguido de una petición. → [Capítulo 6](06-relaciones.qmd)
+
+### Estilos de conflicto {#gl-conflicto}
+Competir, colaborar, transigir, evitar y ceder (Thomas y Kilmann). → [Capítulo 6](06-relaciones.qmd)

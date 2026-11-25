@@ -1,0 +1,151 @@
+---
+engine: markdown
+---
+
+# Capítulo 5. Autocompasión y síndrome del impostor {#sec-cap5}
+
+::: {.callout-note appearance="default"}
+## Objetivos
+- Entender la autocompasión y sus tres componentes, y por qué no es autoindulgencia.
+- Conocer lo que se sabe sobre el síndrome del impostor.
+- Practicar formas de tratarse ante el error que favorecen el aprendizaje.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+## Glosario del capítulo
+[Autocompasión](92-glosario.qmd#gl-autocompasion) · [Humanidad compartida](92-glosario.qmd#gl-humanidad) · [Atención plena](92-glosario.qmd#gl-atencionplena) · [Autocrítica](92-glosario.qmd#gl-autocritica) · [Síndrome del impostor](92-glosario.qmd#gl-impostor) · [Perfeccionismo](92-glosario.qmd#gl-perfeccionismo)
+:::
+
+::: {.callout-tip appearance="simple" icon="false"}
+## Descargas
+[Plantilla de entrega del reto (.qmd)](plantillas/entrega_reto.qmd){.btn .btn-outline-primary .btn-sm download="entrega_reto.qmd"}
+[Tema de estilo (.scss)](plantillas/informe.scss){.btn .btn-outline-primary .btn-sm download="informe.scss"}
+:::
+
+## Lectura obligatoria
+
+::: {.lectura}
+Neff, K. (2003). [Self-compassion: An alternative conceptualization of a healthy attitude toward oneself](https://doi.org/10.1080/15298860309032). *Self and Identity*, 2(2), 85-101.
+:::
+
+### Lectura complementaria {.unnumbered}
+
+- Bravata, D. M.; Watts, S. A.; Keefer, A. L.; Madhusudhan, D. K.; Taylor, K. T.; Clark, D. M.; Nelson, R. S.; Cokley, K. O.; Hagg, H. K. (2020). [Prevalence, predictors, and treatment of impostor syndrome: A systematic review](https://doi.org/10.1007/s11606-019-05364-1). *Journal of General Internal Medicine*, 35(4), 1252-1275.
+
+## 1. La autocompasión
+
+La ciencia es una fuente constante de evaluación y de error: experimentos que fallan, artículos rechazados, comparaciones con colegas. Muchas personas responden con una **autocrítica** dura, con la idea de que así se exigirán más.
+
+Neff (2003) propone una alternativa, la **autocompasión**: tratarse a uno mismo, ante el sufrimiento o el fracaso, con la misma amabilidad con que trataríamos a un buen amigo. Tiene tres componentes, cada uno con su opuesto:
+
+| Componente | Frente a | Ante un error |
+|---|---|---|
+| **Amabilidad con uno mismo** | Juicio severo | «Me equivoqué; es comprensible y puedo corregirlo» |
+| **Humanidad compartida** | Aislamiento | «A todo el mundo le rechazan artículos» |
+| **Atención plena** | Sobreidentificación | «Me siento decepcionado» (sin «soy un desastre») |
+
+La autocompasión **no es autoindulgencia ni rebajar el listón**: permite mirar el error de frente, porque reconocerlo no amenaza la identidad, y así facilita aprender y volver a intentarlo. Tampoco es lo mismo que la autoestima, que depende de compararse y de tener éxito.
+
+## 2. El síndrome del impostor
+
+El **síndrome del impostor** es la experiencia de sentir que los propios logros no son merecidos y que, tarde o temprano, los demás descubrirán que uno no es tan competente como parece. No es un diagnóstico clínico.
+
+La revisión sistemática de Bravata et al. (2020) encontró que es **frecuente** en muchos grupos profesionales y académicos, aunque las cifras varían enormemente según el cuestionario y el punto de corte, y que se asocia con ansiedad, depresión y agotamiento. Había muy pocos estudios que evaluaran intervenciones. Se relaciona a menudo con el **perfeccionismo** y puede ser más intenso en grupos infrarrepresentados en un campo.
+
+Algunas ideas que ayudan:
+
+- **Nombrarlo** y compartirlo: descubrir que colegas admirados sienten lo mismo reduce su fuerza (humanidad compartida).
+- **Registrar evidencias**: un archivo con logros, agradecimientos y comentarios positivos.
+- **Distinguir sentir de ser**: sentirse impostor no prueba serlo.
+- **Rebajar el perfeccionismo**: «suficientemente bueno» a menudo es lo adecuado.
+
+## Laboratorio: responder como a un buen amigo {#lab-i5-amigo}
+
+::: {.laboratorio}
+::: {.laboratorio-etiqueta}
+Laboratorio · se ejecuta en tu navegador; tu texto no sale de él
+:::
+
+Escribe un pensamiento autocrítico frecuente. El laboratorio te ayuda a reformularlo con los tres componentes de Neff.
+
+```{ojs}
+//| echo: false
+texto = window.Lab.texto
+viewof critico = texto("Pensamiento autocrítico", {value: "Todos mis compañeros publican más que yo; no valgo para esto", submit: "Reformular"})
+```
+
+```{ojs}
+//| echo: false
+{
+  const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const t = (critico || "").toLowerCase();
+  const marcas = [["siempre", "generalización"], ["nunca", "generalización"], ["todos", "comparación global"], ["nadie", "generalización"], ["no valgo", "juicio sobre la identidad"], ["soy un", "juicio sobre la identidad"], ["soy una", "juicio sobre la identidad"], ["fraude", "etiqueta de impostor"], ["inútil", "etiqueta"], ["desastre", "etiqueta"], ["debería", "exigencia rígida"]].filter(([w]) => t.includes(w));
+  const d = html`<div role="status"></div>`;
+  d.innerHTML = `${marcas.length ? `<p>Detecto: ${[...new Set(marcas.map(m => m[1]))].join(", ")}.</p>` : ""}
+   <ol>
+    <li><strong>Atención plena</strong> (nombra lo que sientes, sin etiquetarte): «Ahora mismo me siento ___ porque ___».</li>
+    <li><strong>Humanidad compartida</strong>: «Muchas personas en el doctorado sienten esto; ___ (alguien que admiras) también ha pasado por algo parecido».</li>
+    <li><strong>Amabilidad</strong>: ¿qué le dirías a un buen amigo que pensara «${esc(critico)}»? Escríbelo y díselo a ti.</li>
+   </ol>
+   <p class="small">Si este tipo de pensamientos es constante e intenso, o afecta a tu sueño y a tu vida diaria, coméntalo con un profesional (ver <a href="90-recursos.html">Recursos de apoyo</a>).</p>`;
+  return d;
+}
+```
+:::
+
+## Actividades
+
+::: {.clasificar #ia-i5-comp titulo="¿Qué componente de la autocompasión (o su opuesto)?" categorias="Amabilidad|Juicio severo|Humanidad compartida|Aislamiento|Atención plena|Sobreidentificación"}
+- «Es normal que me duela; he trabajado mucho en esto» → Amabilidad
+- «Soy idiota por no haberlo visto» → Juicio severo
+- «Seguro que otros doctorandos han tenido revisiones así» → Humanidad compartida
+- «Solo a mí me pasan estas cosas» → Aislamiento
+- «Estoy frustrado; voy a respirar antes de seguir» → Atención plena
+- «Este rechazo demuestra que todo mi doctorado es un fracaso» → Sobreidentificación
+:::
+
+::: {.clasificar #ia-i5-mito titulo="¿Verdadero o mito?" categorias="Verdadero|Mito"}
+- La autocompasión hace que la gente se esfuerce menos → Mito // Facilita mirar el error y volver a intentarlo.
+- El síndrome del impostor es un diagnóstico clínico → Mito
+- La prevalencia del síndrome del impostor varía mucho según cómo se mide → Verdadero
+- Sentirse impostor no prueba serlo → Verdadero
+:::
+
+## Reto evaluable {#reto-i5}
+
+::: {.callout-important appearance="simple" icon="false"}
+## Reto del capítulo 5 · Un archivo de evidencias y una carta
+1. Crea un **archivo de evidencias** con al menos diez logros, agradecimientos o comentarios positivos de tu trayectoria.
+2. Escribe una breve **carta autocompasiva** sobre un error o fracaso reciente, usando los tres componentes de Neff (no tienes que entregarla; basta con una reflexión sobre cómo te sentiste al escribirla).
+3. Identifica un pensamiento de impostor frecuente y analízalo con las ideas del capítulo.
+
+**Entrega:** solo la reflexión, con la [plantilla de entrega](plantillas/entrega_reto.qmd). Este reto **no tiene solución en el libro**.
+:::
+
+## Autoevaluación
+
+Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
+
+::: {.webex-check .webex-box}
+1. Según Neff (2003), la autocompasión tiene {{< mcq "dos" "*tres" "cinco" >}} componentes
+2. Lo contrario de la humanidad compartida es el {{< fitb "aislamiento" ignorecase=true >}}
+3. La autocompasión equivale a rebajar el nivel de exigencia. {{< torf false >}}
+4. A diferencia de la autoestima, la autocompasión no depende de compararse ni de tener éxito. {{< torf true >}}
+5. Bravata et al. (2020) encontraron que el síndrome del impostor es {{< mcq "muy raro" "*frecuente, con cifras muy variables según cómo se mide" "exclusivo de la medicina" >}}
+6. El síndrome del impostor se asocia a menudo con el {{< fitb "perfeccionismo" ignorecase=true >}}
+7. Había muchos estudios sólidos sobre intervenciones para el síndrome del impostor. {{< torf false >}}
+8. ¿Por qué la autocompasión facilita aprender de los errores?
+
+{{< longmcq "Porque hace olvidarlos" "*Porque reconocer el error no amenaza la identidad, y se puede mirar de frente" "Porque convence de que no hubo error" >}}
+:::
+
+::: {.webex-solution boton="Ver explicaciones"}
+- Amabilidad, humanidad compartida, atención plena.
+- *Isolation*.
+- No es autoindulgencia.
+- Es más estable.
+- Varía según el cuestionario y el punto de corte.
+- «Suficientemente bueno».
+- Pocos estudios de intervención.
+- Por eso no se esconde.
+:::

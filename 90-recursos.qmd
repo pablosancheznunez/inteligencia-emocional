@@ -1,0 +1,36 @@
+---
+engine: markdown
+---
+
+# Recursos de apoyo {#sec-recursos}
+
+Pedir ayuda es una decisión inteligente, no una señal de debilidad. Estos recursos estaban vigentes en noviembre de 2026; comprueba los datos de tu universidad y tu comunidad autónoma.
+
+## Si estás en peligro o piensas en hacerte daño (España)
+
+- **112**: emergencias, cuando hay un riesgo inmediato para la vida.
+- **024**: línea de atención a la conducta suicida del Ministerio de Sanidad. Gratuita, confidencial y disponible las 24 horas, para personas con pensamientos de suicidio y para sus familiares y allegados. Más información en [sanidad.gob.es/linea024](https://www.sanidad.gob.es/linea024/home.htm).
+- **Teléfono de la Esperanza**: 717 003 717, atención en situaciones de crisis las 24 horas.
+
+Fuera de España, el directorio [findahelpline.com](https://findahelpline.com) reúne líneas de ayuda gratuitas de muchos países.
+
+## En tu universidad
+
+- **Servicio de atención psicológica** para estudiantes (y, en muchos casos, para el personal). Busca en la web de tu universidad «atención psicológica» o «apoyo psicológico».
+- **Escuela o comisión de doctorado** del programa: puede orientarte sobre bajas, prórrogas, cambios de dirección o conflictos.
+- **Defensor universitario**: atiende quejas y conflictos con confidencialidad.
+- **Unidad de igualdad** y protocolos frente al acoso.
+- **Servicio de prevención de riesgos laborales** (si tienes contrato): incluye los riesgos psicosociales.
+
+## En el sistema de salud
+
+Tu **médico de atención primaria** puede valorar la situación y derivarte a los servicios de salud mental.
+
+## Comunidad
+
+- Asociaciones de doctorandos y de jóvenes investigadores (por ejemplo, la Federación de Jóvenes Investigadores, FJI/Precarios).
+- Grupos de escritura y de apoyo entre iguales en tu universidad.
+
+## Si te preocupa otra persona
+
+Pregúntale con sencillez cómo está y escucha sin juzgar. Hablar del suicidio con alguien no le induce a hacerlo; preguntar directamente puede ayudar. Anímale a buscar ayuda profesional y, si hay riesgo inmediato, llama al 112. La línea 024 también atiende a familiares y allegados.

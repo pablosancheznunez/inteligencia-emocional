@@ -1,0 +1,158 @@
+---
+engine: markdown
+---
+
+# Capítulo 4. Estrés, bienestar y salud mental {#sec-cap4}
+
+::: {.callout-note appearance="default"}
+## Objetivos
+- Conocer lo que la investigación dice sobre la salud mental en el doctorado y sus límites.
+- Entender el agotamiento profesional (*burnout*) y las condiciones de trabajo que lo favorecen.
+- Identificar hábitos protectores y saber cuándo y dónde pedir ayuda.
+:::
+
+::: {.callout-warning appearance="default"}
+## Si lo estás pasando mal
+Este capítulo habla de malestar psicológico. Si te sientes desbordado o desbordada, no lo afrontes en soledad: habla con alguien de confianza, con tu médico o con el servicio de atención psicológica de tu universidad. En España, la **línea 024** atiende de forma gratuita y a cualquier hora a personas con pensamientos de suicidio y a su entorno; ante una emergencia, llama al **112**. Más información en [Recursos de apoyo](90-recursos.qmd).
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+## Glosario del capítulo
+[Estrés](92-glosario.qmd#gl-estres) · [Agotamiento profesional](92-glosario.qmd#gl-burnout) · [Demandas y control](92-glosario.qmd#gl-demandas) · [Áreas de la vida laboral](92-glosario.qmd#gl-areas) · [Recuperación](92-glosario.qmd#gl-recuperacion)
+:::
+
+::: {.callout-tip appearance="simple" icon="false"}
+## Descargas
+[Plantilla de entrega del reto (.qmd)](plantillas/entrega_reto.qmd){.btn .btn-outline-primary .btn-sm download="entrega_reto.qmd"}
+[Tema de estilo (.scss)](plantillas/informe.scss){.btn .btn-outline-primary .btn-sm download="informe.scss"}
+:::
+
+## Lectura obligatoria
+
+::: {.lectura}
+Levecque, K.; Anseel, F.; De Beuckelaer, A.; Van der Heyden, J.; Gisle, L. (2017). [Work organization and mental health problems in PhD students](https://doi.org/10.1016/j.respol.2017.02.008). *Research Policy*, 46(4), 868-879.
+:::
+
+### Lecturas complementarias {.unnumbered}
+
+- Evans, T. M.; Bira, L.; Gastelum, J. B.; Weiss, L. T.; Vanderford, N. L. (2018). [Evidence for a mental health crisis in graduate education](https://doi.org/10.1038/nbt.4089). *Nature Biotechnology*, 36(3), 282-284.
+- Maslach, C.; Leiter, M. P. (2016). [Understanding the burnout experience: Recent research and its implications for psychiatry](https://doi.org/10.1002/wps.20311). *World Psychiatry*, 15(2), 103-111.
+
+## 1. Qué sabemos del doctorado
+
+Levecque et al. (2017) encuestaron a miles de doctorandos en Flandes (Bélgica). Alrededor de **un tercio** presentaba suficientes síntomas para estar en riesgo de un trastorno psicológico común, como la depresión, una proporción más alta que en otros grupos con estudios superiores. Lo más importante del estudio es que el riesgo se asociaba con **condiciones de trabajo modificables**: el conflicto entre el trabajo y la vida personal, las demandas y el control sobre el propio trabajo, el estilo de liderazgo de la dirección y la cultura de toma de decisiones del equipo.
+
+Evans et al. (2018) encontraron cifras de ansiedad y depresión moderadas o graves muy elevadas en una encuesta en línea internacional a estudiantes de posgrado. Su muestra era voluntaria, lo que probablemente sobrerrepresenta a personas con malestar; aun así, el estudio contribuyó a abrir el debate.
+
+Dos lecturas de estos datos: el malestar en el doctorado es **frecuente** (si te pasa, no estás solo ni sola, y no es un fracaso personal), y buena parte depende de **cómo se organiza el trabajo**, algo que las instituciones y los grupos pueden cambiar.
+
+## 2. El agotamiento profesional
+
+Maslach y Leiter (2016) describen el **agotamiento profesional** (*burnout*) como una respuesta prolongada a estresores crónicos del trabajo con tres dimensiones: **agotamiento** (sentirse sin energía), **cinismo** o distanciamiento del trabajo, e **ineficacia** (sensación de no lograr nada). Proponen que surge de desajustes entre la persona y el trabajo en **seis áreas de la vida laboral**: carga de trabajo, control, recompensa, comunidad, equidad y valores. Por eso las soluciones no son solo individuales: también hay que actuar sobre esas áreas.
+
+## 3. Hábitos protectores
+
+Lo que la investigación asocia con más bienestar no es sorprendente, pero cuesta mantenerlo en periodos de presión:
+
+- **Recuperación**: desconectar de verdad (tiempo sin correo, vacaciones); la recuperación es parte del trabajo, no un premio.
+- **Sueño**, **actividad física** y **contacto social** regulares.
+- **Control**: dividir los objetivos grandes en tareas pequeñas y visibles.
+- **Apoyo**: grupos de escritura, mentores, comunidades de doctorandos.
+- **Pedir ayuda pronto**: cuanto antes, más fácil.
+
+## Laboratorio: tu encaje en las seis áreas {#lab-i4-areas}
+
+::: {.laboratorio}
+::: {.laboratorio-etiqueta}
+Laboratorio · herramienta de reflexión, no de diagnóstico · nada sale de tu navegador
+:::
+
+Valora tu situación actual en cada área de Maslach y Leiter, de −2 (gran desajuste) a +2 (buen encaje).
+
+```{ojs}
+//| echo: false
+rango = window.Lab.rango
+viewof a1 = rango("Carga de trabajo: es asumible con mis horas y recursos", [-2, 2], {value: -1})
+viewof a2 = rango("Control: puedo decidir sobre cómo y cuándo hago mi trabajo", [-2, 2], {value: 1})
+viewof a3 = rango("Recompensa: mi esfuerzo se reconoce", [-2, 2], {value: 0})
+viewof a4 = rango("Comunidad: me siento apoyado o apoyada por mi entorno", [-2, 2], {value: -1})
+viewof a5 = rango("Equidad: las decisiones que me afectan son justas", [-2, 2], {value: 1})
+viewof a6 = rango("Valores: lo que hago tiene sentido para mí", [-2, 2], {value: 2})
+```
+
+```{ojs}
+//| echo: false
+{
+  const ar = [["Carga de trabajo", a1, "Revisa con tu dirección prioridades y plazos; di que no a lo que no es esencial."], ["Control", a2, "Negocia márgenes de decisión: horarios, orden de tareas, métodos."],
+    ["Recompensa", a3, "Haz visibles tus avances y celebra los hitos, también los pequeños."], ["Comunidad", a4, "Busca o crea espacios de apoyo: grupos de escritura, asociaciones de doctorandos."],
+    ["Equidad", a5, "Pide criterios explícitos (autoría, asignación de tareas) y usa los cauces institucionales si hace falta."], ["Valores", a6, "Reconecta con por qué empezaste; si el desajuste es profundo, vale la pena replantearse el camino."]];
+  const W = 300, x0 = 150;
+  const barras = ar.map(([n, v], i) => { const w = Math.abs(v) * 60, x = v < 0 ? x0 - w : x0, c = v < 0 ? "#eb6834" : "#2a78d6";
+    return `<text x="${x0 - 128}" y="${i * 32 + 21}" font-size="12" fill="currentColor">${n}</text>${v ? `<rect x="${x + 128}" y="${i * 32 + 8}" width="${w - 2}" height="18" rx="3" fill="${c}"/>` : ""}<text x="${v < 0 ? x + 122 : x + 134 + w}" y="${i * 32 + 21}" font-size="12" text-anchor="${v < 0 ? "end" : "start"}" fill="currentColor">${v > 0 ? "+" + v : v}</text>`; }).join("");
+  const mal = ar.filter(a => a[1] < 0).sort((p, q) => p[1] - q[1]);
+  const d = html`<div role="status"></div>`;
+  d.innerHTML = `<svg viewBox="10 0 440 ${ar.length * 32 + 8}" width="100%" style="max-width:520px" role="img" aria-label="Encaje en las seis áreas de la vida laboral"><line x1="${x0 + 128}" y1="0" x2="${x0 + 128}" y2="${ar.length * 32}" stroke="currentColor" opacity=".4"/>${barras}</svg>
+   ${mal.length ? `<p><strong>Áreas con desajuste:</strong></p><ul>${mal.map(([n, v, s]) => `<li><strong>${n}</strong> (${v}). ${s}</li>`).join("")}</ul>` : '<p class="lab-bien" style="font-weight:600">No señalas desajustes ahora. Anota qué lo hace posible para protegerlo.</p>'}
+   ${mal.length >= 4 ? '<p class="lab-medio" style="font-weight:600">Varias áreas con desajuste a la vez aumentan el riesgo de agotamiento. Es un buen momento para hablarlo con alguien de confianza o con el servicio de atención psicológica de tu universidad.</p>' : ""}
+   <p class="small">Esta herramienta no mide tu salud mental ni sustituye una valoración profesional.</p>`;
+  return d;
+}
+```
+:::
+
+## Actividades
+
+::: {.clasificar #ia-i4-dim titulo="¿Qué dimensión del agotamiento? (Maslach y Leiter, 2016)" categorias="Agotamiento|Cinismo|Ineficacia"}
+- «Llego a casa sin energía para nada» → Agotamiento
+- «Me da igual lo que pase con el proyecto» → Cinismo
+- «Por mucho que trabaje, nunca avanzo» → Ineficacia
+- «Ya no me interesa lo que investiga mi grupo» → Cinismo
+:::
+
+::: {.clasificar #ia-i4-area titulo="¿Qué área de la vida laboral está en juego?" categorias="Carga|Control|Recompensa|Comunidad|Equidad|Valores"}
+- Te asignan tres proyectos nuevos sin quitarte ninguno → Carga
+- Nunca puedes decidir el orden de tus tareas → Control
+- Nadie comenta nunca tus avances → Recompensa
+- Trabajas sola sin contacto con otros doctorandos → Comunidad
+- La autoría se decide sin criterios y siempre favorece a los mismos → Equidad
+- Te piden maquillar resultados para que parezcan más claros → Valores
+:::
+
+## Reto evaluable {#reto-i4}
+
+::: {.callout-important appearance="simple" icon="false"}
+## Reto del capítulo 4 · Un plan de cuidado sostenible
+1. Usa el laboratorio para identificar tus áreas de mayor desajuste (no tienes que compartir las puntuaciones).
+2. Diseña un plan con **una acción individual** y **una acción organizativa** (algo que propondrías a tu grupo o programa) para la principal área de desajuste.
+3. Identifica los recursos de apoyo de tu universidad y anota cómo acceder a ellos.
+
+**Entrega:** con la [plantilla de entrega](plantillas/entrega_reto.qmd). Puedes plantear el reto sobre un caso ficticio si lo prefieres. Este reto **no tiene solución en el libro**.
+:::
+
+## Autoevaluación
+
+Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
+
+::: {.webex-check .webex-box}
+1. Levecque et al. (2017) encontraron que alrededor de {{< mcq "uno de cada diez" "*un tercio" "tres de cada cuatro" >}} doctorandos estaba en riesgo de un trastorno psicológico común
+2. Según Levecque et al., el riesgo se asociaba con condiciones de trabajo modificables. {{< torf true >}}
+3. Las tres dimensiones del agotamiento son agotamiento, cinismo e {{< fitb "ineficacia" ignorecase=true >}}
+4. La muestra de Evans et al. (2018) era voluntaria, lo que puede sobrerrepresentar a personas con malestar. {{< torf true >}}
+5. Maslach y Leiter proponen {{< mcq "tres" "*seis" "diez" >}} áreas de la vida laboral
+6. Las soluciones al agotamiento son exclusivamente individuales. {{< torf false >}}
+7. Desconectar de verdad del trabajo forma parte de la {{< fitb "recuperación" "recuperacion" ignorecase=true >}}
+8. Ante un malestar intenso o persistente, ¿qué es lo más recomendable?
+
+{{< longmcq "Esperar a que pase solo" "*Hablar con alguien de confianza y pedir ayuda profesional pronto" "Trabajar más para distraerse" >}}
+:::
+
+::: {.webex-solution boton="Ver explicaciones"}
+- Más que otros grupos con estudios superiores.
+- Conflicto trabajo-vida, demandas, control, liderazgo, cultura del equipo.
+- *Inefficacy*.
+- Sesgo de autoselección.
+- Carga, control, recompensa, comunidad, equidad, valores.
+- También hay que actuar sobre la organización.
+- *Recovery*.
+- Cuanto antes, mejor.
+:::
