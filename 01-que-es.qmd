@@ -30,7 +30,7 @@ Mayer, J. D.; Salovey, P.; Caruso, D. R. (2008). [Emotional intelligence: New ab
 
 ### Lectura complementaria {.unnumbered}
 
-- Joseph, D. L.; Newman, D. A. (2010). [Emotional intelligence: An integrative meta-analysis and cascading model](https://doi.org/10.1037/a0017286). *Journal of Applied Psychology*, 95(1), 54-78.
+- @joseph2010
 
 ## 1. Una capacidad, no un rasgo de personalidad
 
@@ -54,7 +54,7 @@ Distinguen dos familias de enfoques:
 
 ## 3. Qué dice la evidencia
 
-Joseph y Newman (2010) integraron decenas de estudios en un metaanálisis y propusieron un **modelo en cascada**: la percepción de las emociones favorece su comprensión, esta su regulación, y la regulación se asocia con el rendimiento laboral, sobre todo en trabajos con alta carga emocional (atender a personas, gestionar conflictos). También mostraron que los cuestionarios de los modelos mixtos predicen el rendimiento en parte porque se solapan con la personalidad y la autoeficacia; su **validez incremental** (lo que añaden más allá de lo ya conocido) es discutida.
+@joseph2010 integraron decenas de estudios en un metaanálisis y propusieron un **modelo en cascada**: la percepción de las emociones favorece su comprensión, esta su regulación, y la regulación se asocia con el rendimiento laboral, sobre todo en trabajos con alta carga emocional (atender a personas, gestionar conflictos). También mostraron que los cuestionarios de los modelos mixtos predicen el rendimiento en parte porque se solapan con la personalidad y la autoeficacia; su **validez incremental** (lo que añaden más allá de lo ya conocido) es discutida.
 
 Conclusiones prudentes:
 
@@ -75,6 +75,35 @@ Situación: en la reunión del grupo, tu director critica con dureza un capítul
 
 El análisis no elimina la emoción, pero te ayuda a elegir qué hacer con ella.
 :::
+
+## Segundo caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Las cuatro ramas al recibir las revisiones
+Una investigadora recibe las revisiones de su artículo: «revisiones mayores» y un revisor muy crítico. Así se ve cada rama del modelo en acción:
+
+| Rama | Qué hace | En este caso |
+|---|---|---|
+| **Percibir** | Darse cuenta de la emoción | Nota tensión en el pecho y ganas de cerrar el correo: es enfado, con algo de vergüenza |
+| **Usar** | Aprovechar el estado de ánimo para la tarea | Deja la respuesta para el día siguiente; hoy, con ese ánimo, ordena las peticiones en una tabla |
+| **Comprender** | Entender causas y evolución | El enfado viene de sentir que el revisor no ha leído bien; sabe que suele bajar en 24 horas |
+| **Regular** | Influir en la emoción propia y ajena | Reformula: «tres de las cinco críticas mejoran el artículo»; pide a una colega que lea la respuesta antes de enviarla |
+
+Ninguna rama exige suprimir el enfado. Lo que cambia es que la emoción informa la respuesta en lugar de escribirla.
+:::
+
+```{dot}
+//| label: fig-i1-ramas
+//| fig-cap: "Las cuatro ramas como secuencia en una situación concreta."
+//| fig-alt: "Cuatro cajas en secuencia: percibir, usar, comprender y regular, aplicadas a la recepción de revisiones críticas."
+digraph {
+  bgcolor="white"; pad=0.2; rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#1a4d8f", fontname="Helvetica", fontsize=11];
+  edge [color="#45433f", fontname="Helvetica", fontsize=10];
+  p [label="Percibir\n«es enfado»"]; u [label="Usar\nordenar, no responder"]; c [label="Comprender\npor qué y cuánto dura"]; r [label="Regular\nreformular, pedir ayuda", fillcolor="#eaf6ef"];
+  p -> u -> c -> r;
+}
+```
 
 ## Ejercicios graduados
 
@@ -128,7 +157,7 @@ Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la
 2. Los modelos que combinan capacidades con rasgos de personalidad se llaman modelos {{< fitb "mixtos" ignorecase=true >}}
 3. La rama más compleja del modelo de capacidad es {{< mcq "percibir" "usar" "*regular" >}}
 4. El MSCEIT es un cuestionario de autoinforme. {{< torf false >}}
-5. Joseph y Newman (2010) proponen un modelo en {{< fitb "cascada" ignorecase=true >}}
+5. @joseph2010 proponen un modelo en {{< fitb "cascada" ignorecase=true >}}
 6. Según la evidencia, la inteligencia emocional explica la mayor parte del éxito profesional. {{< torf false >}}
 7. Lo que un predictor añade más allá de otros ya conocidos es su validez {{< fitb "incremental" ignorecase=true >}}
 8. ¿En qué trabajos se asocia más la inteligencia emocional con el rendimiento?
@@ -144,5 +173,5 @@ Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la
 - Percibir → comprender → regular → rendimiento.
 - Efectos moderados.
 - *Incremental validity*.
-- Joseph y Newman (2010).
+- @joseph2010.
 :::

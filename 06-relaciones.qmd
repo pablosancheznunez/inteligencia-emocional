@@ -41,7 +41,7 @@ La **escucha activa** convierte la empatía en conducta:
 
 ## 2. La retroalimentación: no siempre ayuda
 
-Kluger y DeNisi (1996) reunieron cientos de estudios sobre intervenciones de retroalimentación. En promedio mejoraban el rendimiento, pero en **más de un tercio de los casos lo empeoraban**. Su explicación: la retroalimentación funciona cuando dirige la atención a la **tarea** (qué hacer y cómo mejorarla) y falla cuando la dirige hacia **la persona** («eres descuidado»), porque activa la autoprotección en lugar del aprendizaje.
+@kluger1996 reunieron cientos de estudios sobre intervenciones de retroalimentación. En promedio mejoraban el rendimiento, pero en **más de un tercio de los casos lo empeoraban**. Su explicación: la retroalimentación funciona cuando dirige la atención a la **tarea** (qué hacer y cómo mejorarla) y falla cuando la dirige hacia **la persona** («eres descuidado»), porque activa la autoprotección en lugar del aprendizaje.
 
 Un formato práctico es el **modelo SCI** (situación, comportamiento, impacto), seguido de una petición:
 
@@ -118,6 +118,35 @@ Versión con el modelo SCI:
 Escucha activa después: quizá hay un problema (técnico o personal) que no conocías.
 :::
 
+## Segundo caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Una conversación difícil con la comunicación no violenta
+Dos doctorandas comparten un equipo de laboratorio. Una lo deja ocupado sin avisar y la otra ha perdido dos días de trabajo. Prepara la conversación con los cuatro pasos de la comunicación no violenta (observación, sentimiento, necesidad, petición):
+
+| Paso | Frase preparada | Evita |
+|---|---|---|
+| **Observación** (hechos, sin juicio) | «El martes y el jueves el equipo estaba reservado a mi nombre y lo encontré ocupado.» | «Siempre haces lo que quieres.» |
+| **Sentimiento** | «Me sentí frustrada y preocupada por el plazo.» | «Me hiciste enfadar.» |
+| **Necesidad** | «Necesito poder contar con mis turnos para planificar.» | Dejarlo implícito |
+| **Petición** (concreta y negociable) | «¿Podemos usar el calendario compartido y avisarnos si alguna necesita cambiar un turno?» | «Que no vuelva a pasar.» |
+
+La compañera explica que no sabía que existía el calendario. El conflicto era de información, no de mala fe: algo que no habría salido a la luz con un reproche.
+:::
+
+```{dot}
+//| label: fig-i6-nvc
+//| fig-cap: "Los cuatro pasos de una petición clara."
+//| fig-alt: "Cuatro cajas en secuencia: observación, sentimiento, necesidad y petición, que desembocan en un acuerdo."
+digraph {
+  bgcolor="white"; pad=0.2; rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#1a4d8f", fontname="Helvetica", fontsize=11];
+  edge [color="#45433f", fontname="Helvetica", fontsize=10];
+  o [label="Observación\nhechos"]; s [label="Sentimiento"]; n [label="Necesidad"]; p [label="Petición\nconcreta"]; a [label="Acuerdo", shape=ellipse, fillcolor="#eaf6ef"];
+  o -> s -> n -> p -> a;
+}
+```
+
 ## Ejercicios graduados
 
 **Básico.** Reescribe con el modelo SCI: «Tus presentaciones siempre son aburridas».
@@ -193,7 +222,7 @@ Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la
 
 ::: {.webex-check .webex-box}
 1. Comprender lo que otra persona piensa y siente es la empatía {{< fitb "cognitiva" ignorecase=true >}}
-2. Según Kluger y DeNisi (1996), la retroalimentación siempre mejora el rendimiento. {{< torf false >}}
+2. Según @kluger1996, la retroalimentación siempre mejora el rendimiento. {{< torf false >}}
 3. La retroalimentación tiende a fallar cuando dirige la atención hacia {{< mcq "la tarea" "*la persona" "el objetivo" >}}
 4. En el modelo SCI, la C corresponde al {{< fitb "comportamiento" ignorecase=true >}}
 5. Parafrasear lo que dice la otra persona forma parte de la escucha {{< fitb "activa" ignorecase=true >}}

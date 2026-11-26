@@ -110,6 +110,38 @@ Después de una evaluación de seguimiento negativa, una doctoranda escribe en s
 Ponerle nombre preciso convierte un malestar difuso en algo con lo que se puede trabajar.
 :::
 
+## Segundo caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Un diario emocional de una semana
+Un doctorando que «siempre está agobiado» lleva durante una semana un registro breve: momento, situación, emoción con nombre preciso, intensidad (0-10) y qué hizo después.
+
+| Día | Situación | Emoción | Int. | Qué hizo |
+|---|---|---|---|---|
+| Lunes | Reunión con su director | Inseguridad | 6 | Calló sus dudas sobre el análisis |
+| Martes | El código falla otra vez | Frustración | 7 | Siguió tres horas sin pausa |
+| Miércoles | Un compañero publica | Envidia, luego desánimo | 5 | Dejó de escribir esa tarde |
+| Jueves | El análisis por fin funciona | Alivio, satisfacción | 6 | Lo contó en el grupo |
+| Viernes | Plazo de un congreso | Ansiedad | 8 | Trabajó hasta tarde |
+
+Al revisar la tabla, «agobio» se descompone en emociones distintas con causas distintas: la inseguridad aparece con su director; la frustración, con el código. Cada una pide una respuesta diferente: preparar las dudas por escrito antes de las reuniones; poner un límite de una hora antes de pedir ayuda con el código.
+:::
+
+```{dot}
+//| label: fig-i2-diario
+//| fig-cap: "De una etiqueta vaga a emociones con nombre y respuestas específicas."
+//| fig-alt: "Una caja con la palabra agobio se divide en inseguridad, frustración y ansiedad, y cada una lleva a una respuesta distinta."
+digraph {
+  bgcolor="white"; pad=0.2; rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#1a4d8f", fontname="Helvetica", fontsize=11];
+  edge [color="#45433f", fontname="Helvetica", fontsize=10];
+  g [label="«Agobio»", fillcolor="#fdf0e8"];
+  i [label="Inseguridad"]; f [label="Frustración"]; a [label="Ansiedad"];
+  ri [label="Llevar las dudas\npor escrito", fillcolor="#eaf6ef"]; rf [label="Pedir ayuda\ntras una hora", fillcolor="#eaf6ef"]; ra [label="Planificar el plazo\ncon antelación", fillcolor="#eaf6ef"];
+  g -> i -> ri; g -> f -> rf; g -> a -> ra;
+}
+```
+
 ## Ejercicios graduados
 
 **Básico.** Sustituye «estoy mal» por una emoción más precisa en esta situación: el código que llevas días depurando sigue fallando.
@@ -162,7 +194,7 @@ Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la
 1. Un estado de ánimo es más breve y tiene un desencadenante más claro que una emoción. {{< torf false >}}
 2. Las dos dimensiones básicas para situar las emociones son la valencia y la {{< fitb "activación" "activacion" ignorecase=true >}}
 3. La capacidad de distinguir con precisión entre emociones parecidas es la granularidad {{< fitb "emocional" ignorecase=true >}}
-4. Según Kashdan et al. (2015), más granularidad para las emociones desagradables se asocia con {{< mcq "peor regulación" "*mejor regulación" "ningún efecto" >}}
+4. Según @kashdan2015, más granularidad para las emociones desagradables se asocia con {{< mcq "peor regulación" "*mejor regulación" "ningún efecto" >}}
 5. Nombrar una emoción ya puede tener un efecto regulador. {{< torf true >}}
 6. «Soy un fraude» expresa sobre todo {{< mcq "culpa" "*vergüenza" "orgullo" >}}
 7. Las emociones son siempre un obstáculo para pensar con claridad. {{< torf false >}}

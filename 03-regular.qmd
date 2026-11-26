@@ -30,11 +30,11 @@ Gross, J. J. (1998). [The emerging field of emotion regulation: An integrative r
 
 ### Lectura complementaria {.unnumbered}
 
-- Gollwitzer, P. M. (1999). [Implementation intentions: Strong effects of simple plans](https://doi.org/10.1037/0003-066X.54.7.493). *American Psychologist*, 54(7), 493-503.
+- @gollwitzer1999
 
 ## 1. El modelo de proceso
 
-La **regulación emocional** es el conjunto de procesos con los que influimos en qué emociones tenemos, cuándo y cómo las vivimos y expresamos. Gross (1998) la ordena según el momento en que se interviene en la generación de una emoción, lo que da cinco familias de estrategias:
+La **regulación emocional** es el conjunto de procesos con los que influimos en qué emociones tenemos, cuándo y cómo las vivimos y expresamos. @gross1998 la ordena según el momento en que se interviene en la generación de una emoción, lo que da cinco familias de estrategias:
 
 | Momento | Familia | Ejemplo |
 |---|---|---|
@@ -44,7 +44,7 @@ La **regulación emocional** es el conjunto de procesos con los que influimos en
 | | **Cambio cognitivo** (reevaluación) | «El rechazo es sobre este manuscrito, no sobre mi valía; los informes me dicen cómo mejorarlo» |
 | Después de que surge la emoción | **Modulación de la respuesta** | Respirar despacio, hacer ejercicio; o suprimir la expresión |
 
-![El modelo de proceso de Gross (1998): cinco momentos en los que se puede regular una emoción.](figuras/i3_proceso.svg){#fig-i3-proceso fig-alt="Secuencia de izquierda a derecha: situación, atención, valoración y respuesta. Debajo, cinco flechas señalan dónde actúa cada familia: selección y modificación de la situación, despliegue de la atención, cambio cognitivo y modulación de la respuesta."}
+![El modelo de proceso de @gross1998: cinco momentos en los que se puede regular una emoción.](figuras/i3_proceso.svg){#fig-i3-proceso fig-alt="Secuencia de izquierda a derecha: situación, atención, valoración y respuesta. Debajo, cinco flechas señalan dónde actúa cada familia: selección y modificación de la situación, despliegue de la atención, cambio cognitivo y modulación de la respuesta."}
 
 ## 2. No todas las estrategias son iguales
 
@@ -57,7 +57,7 @@ Otras estrategias habituales: la **rumiación** (dar vueltas una y otra vez a lo
 
 ## 3. Planes «si-entonces»
 
-Gollwitzer (1999) mostró que las **intenciones de implementación**, planes con la forma «*si* ocurre la situación X, *entonces* haré Y», aumentan mucho la probabilidad de actuar como queremos, porque la situación dispara la conducta casi automáticamente. Son especialmente útiles para situaciones emocionales previsibles: la llegada de una revisión, una reunión tensa, el bloqueo ante la página en blanco.
+@gollwitzer1999 mostró que las **intenciones de implementación**, planes con la forma «*si* ocurre la situación X, *entonces* haré Y», aumentan mucho la probabilidad de actuar como queremos, porque la situación dispara la conducta casi automáticamente. Son especialmente útiles para situaciones emocionales previsibles: la llegada de una revisión, una reunión tensa, el bloqueo ante la página en blanco.
 
 ## Laboratorio: tu plan si-entonces {#lab-i3-plan}
 
@@ -108,6 +108,37 @@ viewof acc = texto("…entonces haré…", {value: "leerlo por la mañana, con t
 Los planes se escriben antes y se repasan el día de antes, para que la situación active la respuesta.
 :::
 
+## Segundo caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Elegir el momento de regular
+El modelo de proceso dice que se puede intervenir en cinco momentos. Una investigadora que se pone muy nerviosa antes de presentar en congresos prueba una estrategia en cada uno:
+
+| Momento | Estrategia | Qué hizo | Resultado |
+|---|---|---|---|
+| Selección de la situación | Elegir el formato | Pidió presentar en la sesión de pósteres el primer año | Útil como paso intermedio, no como solución permanente |
+| Modificación de la situación | Cambiar las condiciones | Ensayó en la sala la víspera | Muy útil: menos sorpresas |
+| Despliegue de la atención | Dónde poner el foco | Mirar a dos caras amables del público | Útil |
+| Cambio cognitivo | Reevaluar | «La activación me prepara para hacerlo bien» | Útil: misma activación, otra lectura |
+| Modulación de la respuesta | Actuar sobre el cuerpo | Respiración lenta antes de subir | Útil a corto plazo |
+| (Contraejemplo) | Suprimir | Intentar no mostrar nada | Más tensión y peor recuerdo de las preguntas |
+
+Las estrategias tempranas (antes de que la emoción esté en marcha) y la reevaluación dieron mejores resultados que intentar ocultar la emoción una vez desatada.
+:::
+
+```{dot}
+//| label: fig-i3-proceso
+//| fig-cap: "El modelo de proceso: cinco momentos para regular una emoción."
+//| fig-alt: "Secuencia de cinco momentos: selección de la situación, modificación de la situación, despliegue de la atención, cambio cognitivo y modulación de la respuesta, con una flecha que indica que intervenir antes suele ser más eficaz."
+digraph {
+  bgcolor="white"; pad=0.2; rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#1a4d8f", fontname="Helvetica", fontsize=11];
+  edge [color="#45433f", fontname="Helvetica", fontsize=10];
+  s [label="Selección\nde la situación"]; m [label="Modificación\nde la situación"]; a [label="Despliegue\nde la atención"]; c [label="Cambio\ncognitivo", fillcolor="#eaf6ef"]; r [label="Modulación\nde la respuesta"];
+  s -> m -> a -> c -> r;
+}
+```
+
 ## Ejercicios graduados
 
 **Básico.** ¿Qué familia de estrategias de Gross es «ver la pregunta difícil del tribunal como una oportunidad»?
@@ -125,7 +156,7 @@ Deben ser concretos (situación precisa, acción observable) y basarse en estrat
 
 ## Actividades
 
-::: {.clasificar #ia-i3-familia titulo="¿Qué familia de estrategia? (Gross, 1998)" categorias="Selección de la situación|Modificación de la situación|Despliegue de la atención|Cambio cognitivo|Modulación de la respuesta"}
+::: {.clasificar #ia-i3-familia titulo="¿Qué familia de estrategia? [@gross1998]" categorias="Selección de la situación|Modificación de la situación|Despliegue de la atención|Cambio cognitivo|Modulación de la respuesta"}
 - No consultar el correo durante el fin de semana antes de la defensa → Selección de la situación
 - Pedir que la reunión con el director sea por la mañana y con un orden del día → Modificación de la situación
 - Durante la presentación, mirar a las personas que asienten → Despliegue de la atención
@@ -155,7 +186,7 @@ Al día siguiente relees los informes. ¿Cómo los interpretas?
 La interpretación generaliza un hecho concreto a tu identidad. Prolonga el malestar y no ayuda a mejorar el artículo.
 
 ### Reevaluación {#i3e-reevalua .final .bien}
-Separas el resultado de tu valía, reconoces lo injusto y lo útil y conviertes la emoción en un plan. Es la estrategia con efectos más favorables según Gross (1998).
+Separas el resultado de tu valía, reconoces lo injusto y lo útil y conviertes la emoción en un plan. Es la estrategia con efectos más favorables según @gross1998.
 :::
 
 ## Reto evaluable {#reto-i3}
@@ -174,7 +205,7 @@ Separas el resultado de tu valía, reconoces lo injusto y lo útil y conviertes 
 Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
 
 ::: {.webex-check .webex-box}
-1. El modelo de proceso de Gross (1998) tiene {{< mcq "tres" "*cinco" "siete" >}} familias de estrategias
+1. El modelo de proceso de @gross1998 tiene {{< mcq "tres" "*cinco" "siete" >}} familias de estrategias
 2. Cambiar la interpretación de una situación es la reevaluación {{< fitb "cognitiva" ignorecase=true >}}
 3. La supresión expresiva elimina la experiencia emocional sin costes. {{< torf false >}}
 4. Dar vueltas una y otra vez a lo que salió mal es la {{< fitb "rumiación" "rumiacion" ignorecase=true >}}
@@ -193,6 +224,6 @@ Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la
 - Prolonga el malestar.
 - Actúa antes de la situación.
 - La flexibilidad importa.
-- Gollwitzer (1999).
+- @gollwitzer1999.
 - Por eso los planes si-entonces ayudan.
 :::

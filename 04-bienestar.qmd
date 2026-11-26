@@ -35,20 +35,20 @@ Levecque, K.; Anseel, F.; De Beuckelaer, A.; Van der Heyden, J.; Gisle, L. (2017
 
 ### Lecturas complementarias {.unnumbered}
 
-- Evans, T. M.; Bira, L.; Gastelum, J. B.; Weiss, L. T.; Vanderford, N. L. (2018). [Evidence for a mental health crisis in graduate education](https://doi.org/10.1038/nbt.4089). *Nature Biotechnology*, 36(3), 282-284.
-- Maslach, C.; Leiter, M. P. (2016). [Understanding the burnout experience: Recent research and its implications for psychiatry](https://doi.org/10.1002/wps.20311). *World Psychiatry*, 15(2), 103-111.
+- @evans2018
+- @maslach2016
 
 ## 1. Qué sabemos del doctorado
 
-Levecque et al. (2017) encuestaron a miles de doctorandos en Flandes (Bélgica). Alrededor de **un tercio** presentaba suficientes síntomas para estar en riesgo de un trastorno psicológico común, como la depresión, una proporción más alta que en otros grupos con estudios superiores. Lo más importante del estudio es que el riesgo se asociaba con **condiciones de trabajo modificables**: el conflicto entre el trabajo y la vida personal, las demandas y el control sobre el propio trabajo, el estilo de liderazgo de la dirección y la cultura de toma de decisiones del equipo.
+@levecque2017 encuestaron a miles de doctorandos en Flandes (Bélgica). Alrededor de **un tercio** presentaba suficientes síntomas para estar en riesgo de un trastorno psicológico común, como la depresión, una proporción más alta que en otros grupos con estudios superiores. Lo más importante del estudio es que el riesgo se asociaba con **condiciones de trabajo modificables**: el conflicto entre el trabajo y la vida personal, las demandas y el control sobre el propio trabajo, el estilo de liderazgo de la dirección y la cultura de toma de decisiones del equipo.
 
-Evans et al. (2018) encontraron cifras de ansiedad y depresión moderadas o graves muy elevadas en una encuesta en línea internacional a estudiantes de posgrado. Su muestra era voluntaria, lo que probablemente sobrerrepresenta a personas con malestar; aun así, el estudio contribuyó a abrir el debate.
+@evans2018 encontraron cifras de ansiedad y depresión moderadas o graves muy elevadas en una encuesta en línea internacional a estudiantes de posgrado. Su muestra era voluntaria, lo que probablemente sobrerrepresenta a personas con malestar; aun así, el estudio contribuyó a abrir el debate.
 
 Dos lecturas de estos datos: el malestar en el doctorado es **frecuente** (si te pasa, no estás solo ni sola, y no es un fracaso personal), y buena parte depende de **cómo se organiza el trabajo**, algo que las instituciones y los grupos pueden cambiar.
 
 ## 2. El agotamiento profesional
 
-Maslach y Leiter (2016) describen el **agotamiento profesional** (*burnout*) como una respuesta prolongada a estresores crónicos del trabajo con tres dimensiones: **agotamiento** (sentirse sin energía), **cinismo** o distanciamiento del trabajo, e **ineficacia** (sensación de no lograr nada). Proponen que surge de desajustes entre la persona y el trabajo en **seis áreas de la vida laboral**: carga de trabajo, control, recompensa, comunidad, equidad y valores. Por eso las soluciones no son solo individuales: también hay que actuar sobre esas áreas.
+@maslach2016 describen el **agotamiento profesional** (*burnout*) como una respuesta prolongada a estresores crónicos del trabajo con tres dimensiones: **agotamiento** (sentirse sin energía), **cinismo** o distanciamiento del trabajo, e **ineficacia** (sensación de no lograr nada). Proponen que surge de desajustes entre la persona y el trabajo en **seis áreas de la vida laboral**: carga de trabajo, control, recompensa, comunidad, equidad y valores. Por eso las soluciones no son solo individuales: también hay que actuar sobre esas áreas.
 
 ## 3. Hábitos protectores
 
@@ -114,8 +114,39 @@ Acción organizativa (propuesta a la comisión del programa):
 - Criterios escritos sobre la carga docente de los contratos predoctorales.
 - Información visible sobre el servicio de atención psicológica.
 
-El enfoque recoge la conclusión de Levecque et al. (2017): las condiciones de trabajo importan.
+El enfoque recoge la conclusión de @levecque2017: las condiciones de trabajo importan.
 :::
+
+## Segundo caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Un plan de recuperación tras un pico de trabajo
+Una posdoc sale de seis semanas intensas (dos solicitudes y un congreso). Nota cansancio que no se va con el fin de semana y cinismo hacia su trabajo: señales de alerta de agotamiento. En lugar de «descansar cuando pueda», hace un plan concreto de dos semanas:
+
+| Área | Medida | Cómo sabrá que funciona |
+|---|---|---|
+| Desconexión | Sin correo de trabajo de 20:00 a 8:00 y en fin de semana | Duerme siete horas o más |
+| Carga | Pospone una revisión de artículo y lo dice con antelación | Lista de tareas con menos de diez elementos |
+| Recuperación | Dos actividades a la semana sin relación con el trabajo | Las cumple |
+| Apoyo | Habla con su supervisor sobre el calendario del próximo trimestre | Hay un calendario acordado |
+
+Si en dos semanas el cansancio y el cinismo siguen igual, el siguiente paso es consultar con el servicio de atención psicológica de la universidad o con su médico. El plan no sustituye a la ayuda profesional: la complementa.
+:::
+
+```{dot}
+//| label: fig-i4-recuperacion
+//| fig-cap: "Detectar señales, actuar y revisar: un ciclo de dos semanas."
+//| fig-alt: "Ciclo: detectar señales de alerta, poner en marcha un plan con cuatro áreas, revisar a las dos semanas y, si no hay mejora, pedir ayuda profesional."
+digraph {
+  bgcolor="white"; pad=0.2; rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#1a4d8f", fontname="Helvetica", fontsize=11];
+  edge [color="#45433f", fontname="Helvetica", fontsize=10];
+  rankdir=TB;
+  s [label="Señales de alerta\ncansancio, cinismo", fillcolor="#fdf0e8"]; p [label="Plan de dos semanas\ndesconexión, carga, recuperación, apoyo"]; r [label="¿Mejora?", shape=diamond, fillcolor="#fff7e0"];
+  ok [label="Mantener hábitos", fillcolor="#eaf6ef"]; h [label="Pedir ayuda profesional"];
+  s -> p -> r; r -> ok [label="sí"]; r -> h [label="no"];
+}
+```
 
 ## Ejercicios graduados
 
@@ -134,7 +165,7 @@ La acción organizativa debe ser concreta, viable y dirigida a quien puede decid
 
 ## Actividades
 
-::: {.clasificar #ia-i4-dim titulo="¿Qué dimensión del agotamiento? (Maslach y Leiter, 2016)" categorias="Agotamiento|Cinismo|Ineficacia"}
+::: {.clasificar #ia-i4-dim titulo="¿Qué dimensión del agotamiento? [@maslach2016]" categorias="Agotamiento|Cinismo|Ineficacia"}
 - «Llego a casa sin energía para nada» → Agotamiento
 - «Me da igual lo que pase con el proyecto» → Cinismo
 - «Por mucho que trabaje, nunca avanzo» → Ineficacia
@@ -166,10 +197,10 @@ La acción organizativa debe ser concreta, viable y dirigida a quien puede decid
 Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
 
 ::: {.webex-check .webex-box}
-1. Levecque et al. (2017) encontraron que alrededor de {{< mcq "uno de cada diez" "*un tercio" "tres de cada cuatro" >}} doctorandos estaba en riesgo de un trastorno psicológico común
+1. @levecque2017 encontraron que alrededor de {{< mcq "uno de cada diez" "*un tercio" "tres de cada cuatro" >}} doctorandos estaba en riesgo de un trastorno psicológico común
 2. Según Levecque et al., el riesgo se asociaba con condiciones de trabajo modificables. {{< torf true >}}
 3. Las tres dimensiones del agotamiento son agotamiento, cinismo e {{< fitb "ineficacia" ignorecase=true >}}
-4. La muestra de Evans et al. (2018) era voluntaria, lo que puede sobrerrepresentar a personas con malestar. {{< torf true >}}
+4. La muestra de @evans2018 era voluntaria, lo que puede sobrerrepresentar a personas con malestar. {{< torf true >}}
 5. Maslach y Leiter proponen {{< mcq "tres" "*seis" "diez" >}} áreas de la vida laboral
 6. Las soluciones al agotamiento son exclusivamente individuales. {{< torf false >}}
 7. Desconectar de verdad del trabajo forma parte de la {{< fitb "recuperación" "recuperacion" ignorecase=true >}}

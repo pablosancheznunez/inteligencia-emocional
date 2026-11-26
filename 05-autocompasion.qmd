@@ -30,13 +30,13 @@ Neff, K. (2003). [Self-compassion: An alternative conceptualization of a healthy
 
 ### Lectura complementaria {.unnumbered}
 
-- Bravata, D. M.; Watts, S. A.; Keefer, A. L.; Madhusudhan, D. K.; Taylor, K. T.; Clark, D. M.; Nelson, R. S.; Cokley, K. O.; Hagg, H. K. (2020). [Prevalence, predictors, and treatment of impostor syndrome: A systematic review](https://doi.org/10.1007/s11606-019-05364-1). *Journal of General Internal Medicine*, 35(4), 1252-1275.
+- @bravata2020
 
 ## 1. La autocompasión
 
 La ciencia es una fuente constante de evaluación y de error: experimentos que fallan, artículos rechazados, comparaciones con colegas. Muchas personas responden con una **autocrítica** dura, con la idea de que así se exigirán más.
 
-Neff (2003) propone una alternativa, la **autocompasión**: tratarse a uno mismo, ante el sufrimiento o el fracaso, con la misma amabilidad con que trataríamos a un buen amigo. Tiene tres componentes, cada uno con su opuesto:
+@neff2003 propone una alternativa, la **autocompasión**: tratarse a uno mismo, ante el sufrimiento o el fracaso, con la misma amabilidad con que trataríamos a un buen amigo. Tiene tres componentes, cada uno con su opuesto:
 
 | Componente | Frente a | Ante un error |
 |---|---|---|
@@ -50,7 +50,7 @@ La autocompasión **no es autoindulgencia ni rebajar el listón**: permite mirar
 
 El **síndrome del impostor** es la experiencia de sentir que los propios logros no son merecidos y que, tarde o temprano, los demás descubrirán que uno no es tan competente como parece. No es un diagnóstico clínico.
 
-La revisión sistemática de Bravata et al. (2020) encontró que es **frecuente** en muchos grupos profesionales y académicos, aunque las cifras varían enormemente según el cuestionario y el punto de corte, y que se asocia con ansiedad, depresión y agotamiento. Había muy pocos estudios que evaluaran intervenciones. Se relaciona a menudo con el **perfeccionismo** y puede ser más intenso en grupos infrarrepresentados en un campo.
+La revisión sistemática de @bravata2020 encontró que es **frecuente** en muchos grupos profesionales y académicos, aunque las cifras varían enormemente según el cuestionario y el punto de corte, y que se asocia con ansiedad, depresión y agotamiento. Había muy pocos estudios que evaluaran intervenciones. Se relaciona a menudo con el **perfeccionismo** y puede ser más intenso en grupos infrarrepresentados en un campo.
 
 Algunas ideas que ayudan:
 
@@ -106,6 +106,34 @@ Pensamiento tras el rechazo de un artículo: «Soy un fraude, nunca voy a public
 El objetivo no es sentirse bien al instante, sino que el rechazo no se convierta en un juicio sobre tu valía.
 :::
 
+## Segundo caso práctico resuelto
+
+::: {.callout-note appearance="simple" icon="false"}
+## Escribirse una carta autocompasiva
+Un doctorando suspende la evaluación anual de su programa por no haber entregado un capítulo. Su primer diálogo interno es: «Soy un desastre; todos los demás pueden». Usa un ejercicio clásico de autocompasión: escribir lo que le diría a un amigo en su situación, siguiendo los tres componentes:
+
+| Componente | Frase de su carta |
+|---|---|
+| **Atención plena** (reconocer sin exagerar) | «Esto duele y es un revés real; no hace falta fingir que da igual.» |
+| **Humanidad compartida** | «Muchos doctorandos tienen un año en el que no avanzan como querían; no es una prueba de que no valgas.» |
+| **Amabilidad** | «Has tenido un año difícil. ¿Qué necesitas ahora para entregar el capítulo en junio?» |
+
+La carta termina en una acción: pedir una reunión con su director para reorganizar el calendario. La autocompasión no rebaja la exigencia; quita el ruido que impedía actuar.
+:::
+
+```{dot}
+//| label: fig-i5-carta
+//| fig-cap: "De la autocrítica a la acción a través de los tres componentes."
+//| fig-alt: "Diagrama: autocrítica dura que pasa por atención plena, humanidad compartida y amabilidad, y termina en una acción concreta."
+digraph {
+  bgcolor="white"; pad=0.2; rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#1a4d8f", fontname="Helvetica", fontsize=11];
+  edge [color="#45433f", fontname="Helvetica", fontsize=10];
+  a [label="«Soy un desastre»", fillcolor="#fdf0e8"]; m [label="Atención plena"]; h [label="Humanidad\ncompartida"]; k [label="Amabilidad"]; x [label="Acción concreta\nreunión y calendario", fillcolor="#eaf6ef"];
+  a -> m -> h -> k -> x;
+}
+```
+
 ## Ejercicios graduados
 
 **Básico.** ¿Qué componente se opone a «solo a mí me pasan estas cosas»?
@@ -155,11 +183,11 @@ Cada componente debe aparecer de forma reconocible y la respuesta debe ser reali
 Responde a todas las preguntas y pulsa **Mostrar respuestas**. No cuenta para la nota.
 
 ::: {.webex-check .webex-box}
-1. Según Neff (2003), la autocompasión tiene {{< mcq "dos" "*tres" "cinco" >}} componentes
+1. Según @neff2003, la autocompasión tiene {{< mcq "dos" "*tres" "cinco" >}} componentes
 2. Lo contrario de la humanidad compartida es el {{< fitb "aislamiento" ignorecase=true >}}
 3. La autocompasión equivale a rebajar el nivel de exigencia. {{< torf false >}}
 4. A diferencia de la autoestima, la autocompasión no depende de compararse ni de tener éxito. {{< torf true >}}
-5. Bravata et al. (2020) encontraron que el síndrome del impostor es {{< mcq "muy raro" "*frecuente, con cifras muy variables según cómo se mide" "exclusivo de la medicina" >}}
+5. @bravata2020 encontraron que el síndrome del impostor es {{< mcq "muy raro" "*frecuente, con cifras muy variables según cómo se mide" "exclusivo de la medicina" >}}
 6. El síndrome del impostor se asocia a menudo con el {{< fitb "perfeccionismo" ignorecase=true >}}
 7. Había muchos estudios sólidos sobre intervenciones para el síndrome del impostor. {{< torf false >}}
 8. ¿Por qué la autocompasión facilita aprender de los errores?
